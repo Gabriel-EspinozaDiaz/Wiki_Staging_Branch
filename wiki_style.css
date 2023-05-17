@@ -5,11 +5,8 @@ head {
 body {
     color:rgb(9, 9, 9);
     background-color: rgb(219, 219, 219);
-  }
 
-p1 {
-  font-size: 100px;
-}
+  }
 
 a {
     text-align: center;
@@ -49,6 +46,11 @@ h1 {
 
 }
 
+.paras {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Page content */
 .content {
   padding: 16px;
@@ -66,3 +68,16 @@ h1 {
   padding-top: 102px;
 }
 
+p1 {
+  font-size: 100px;
+}
+
+pL {
+  font-size: 100px;
+  text-align: left;
+}
+
+pR {
+  font-size: 100px;
+  text-align: right;
+}
