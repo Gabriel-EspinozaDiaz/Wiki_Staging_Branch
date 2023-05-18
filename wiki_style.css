@@ -34,6 +34,11 @@ a {
 a:link{
   color:inherit;
 }
+a:hover{
+  background-color: inherit;
+  animation-name: hovereffect;
+  animation-duration: 0.5s
+}
 a:visited {
   color:inherit;
 }
@@ -41,6 +46,11 @@ a:active {
   color: inherit;
   opacity: 0;
   transition: all 0.8s;
+}
+
+@keyframes hovereffect{
+  0% {background-color:rgb(86, 86, 86)};
+  100% {background-color:rgb(83, 255, 35)}
 }
 
 /* NAVIGATION BAR (+STICKY BAR SCRIPT) */
