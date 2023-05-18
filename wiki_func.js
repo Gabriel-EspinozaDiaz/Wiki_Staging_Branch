@@ -1,20 +1,15 @@
 
-
-
 window.addEventListener('scroll',() =>{
-  var dist = window.scrollY
-  var navPad = 0
-  if (dist > 0) {
-    navPad = dist
-    console.log(navPad)
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  if (window.pageYOffset >= 0) {
+    navbar.classList.add("sticky")
+    console.log(window.pageYOffset)
   }
   else {
-    navPad = 0
+    navbar.classList.remove("sticky");
     console.log('top')
-  
-    document.getElementById('.navbar').style.padding = navPad
   }
-  
 })
 
 

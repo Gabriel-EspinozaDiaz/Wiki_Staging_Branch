@@ -1,3 +1,5 @@
+/* BASIC CONTENT */
+
 head {
   color:blanchedalmond
 }
@@ -7,6 +9,15 @@ body {
     background-color: rgb(219, 219, 219);
 
   }
+
+  h1 {
+    color: rgb(41, 41, 41);
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+  }
+
+/* LINKS */
 
 a {
     text-align: center;
@@ -32,40 +43,39 @@ a:active {
   transition: all 0.8s;
 }
 
-h1 {
-    color: rgb(41, 41, 41);
-    margin-left: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-    
-  }
+/* NAVIGATION BAR (+STICKY BAR SCRIPT) */
 
-.navbar {
+#navbar {
     text-align: center;
     background-color:rgb(104, 54, 54);
     padding: 7.5px;
+    margin: 7.5px;
 
 }
 
-.paras {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Page content */
 .content {
   padding: 16px;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 102px;
+}
+
+/* DROPDOWN SCRIPT */
+
+/* BODY TEXT (+FLEXBOX ORGANIZATION) */
+
+.paras {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
 }
 
 p1 {
@@ -80,4 +90,12 @@ pL {
 pR {
   font-size: 100px;
   text-align: right;
+}
+
+.bg {
+  height: 100px;
+}
+
+.red {
+  background-color: red;
 }
