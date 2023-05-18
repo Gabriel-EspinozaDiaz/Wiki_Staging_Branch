@@ -6,7 +6,7 @@ head {
 
 body {
     color:rgb(9, 9, 9);
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(213, 213, 213);
 
   }
 
@@ -14,7 +14,7 @@ body {
     color: rgb(41, 41, 41);
     margin-left: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
-    
+
   }
 
 /* LINKS */
@@ -46,20 +46,19 @@ a:active {
 /* NAVIGATION BAR (+STICKY BAR SCRIPT) */
 
 #navbar {
-    text-align: center;
-    background-color:rgb(104, 54, 54);
-    padding: 7.5px;
-    margin: 7.5px;
-
+  text-align: center;
+  background-color:rgb(109, 250, 70);
+  padding: 7.5px;
 }
 
 .content {
-  padding: 16px;
+  padding-top: 16px;
+  margin: 0px 7.5px;
 }
 
 .sticky {
   position: fixed;
-  top: 0;
+  padding-top: 0px;
   width: 100%
 }
 
