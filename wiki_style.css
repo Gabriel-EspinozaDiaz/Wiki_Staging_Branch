@@ -51,10 +51,16 @@ a:active {
 /* NAVIGATION BAR (+STICKY BAR SCRIPT) */
 
 #navbar {
-  overflow: hidden;
-  text-align: center;
+  height:100%;
+  width:200px;
+  overflow: auto;
+  text-align: right;
   background-color:rgb(149, 149, 149);
-  padding-top: 16px;
+  padding-top: 130px;
+  padding-right: 16px;
+  margin-left: -8px;
+  position:fixed!important;
+  z-index:1;
 }
 
 .content {
