@@ -29,6 +29,8 @@ a {
     margin: 0.5%;
     line-height: 250%;
     float: center;
+    animation: loadin;
+    animation-duration: 2s;
   }
 
 a:hover{
@@ -55,8 +57,7 @@ a:active {
   width:200px;
   overflow: auto;
   text-align: right;
-  background-color:rgb(149, 149, 149);
-  padding-top: 130px;
+  background-color:rgb(245, 245, 245);
   padding-right: 16px;
   margin-left: -8px;
   position:fixed!important;
@@ -86,7 +87,10 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 100px;
+}
 
+.logo {
+  width:100%;
 }
 
 p1 {
@@ -109,4 +113,17 @@ pR {
 
 .red {
   background-color: red;
+}
+
+/* LOADIN ANIMATION */
+
+.animateOnce {
+  -webkit-loadin: loadin 0.5s normal forwards; 
+  -moz-loadin:    loadin 0.5s normal forwards;
+  -o-loadin:      loadin 0.5s normal forwards;
+}
+
+@keyframes loadin{
+  from {opacity:0%};
+  to {opacity:100%}
 }
