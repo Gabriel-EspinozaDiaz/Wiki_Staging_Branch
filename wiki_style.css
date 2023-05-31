@@ -29,12 +29,9 @@ a {
     margin: 0.5%;
     line-height: 250%;
     float: center;
-    animation: loadin;
-    animation-duration: 2s;
   }
 
-a:hover{
-  background-color: inherit;
+a:hover{background-color: inherit;
   animation-name: hovereffect;
   animation-duration: 0.5s;
 }
@@ -61,69 +58,33 @@ a:active {
   padding-right: 16px;
   margin-left: -8px;
   position:fixed!important;
-  z-index:1;
+  z-index:1
 }
 
-.content {
-  padding-top: 16px;
-  margin: 0px 7.5px;
-}
+.content {padding-top: 16px; margin: 0px 7.5px}
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+.sticky {position: fixed; top: 0; width: 100%}
 
-.sticky + .content {
-  padding-top: 102px;
-}
+.sticky + .content {padding-top: 102px;}
 
 /* DROPDOWN SCRIPT */
 
 /* BODY TEXT (+FLEXBOX ORGANIZATION) */
 
-.paras {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
 
 .logo {
   width:100%;
 }
 
-p1 {
-  font-size: 100px;
-}
-
-pL {
-  font-size: 100px;
-  text-align: left;
-}
-
-pR {
-  font-size: 100px;
-  text-align: right;
-}
-
-.bg {
-  height: 100px;
-}
-
-.red {
-  background-color: red;
-}
-
 /* LOADIN ANIMATION */
 
-.animateOnce {
-  -webkit-loadin: loadin 0.5s normal forwards; 
-  -moz-loadin:    loadin 0.5s normal forwards;
-  -o-loadin:      loadin 0.5s normal forwards;
+.openanimated {
+  animation: loadin 2s;
+  position: relative;
 }
 
 @keyframes loadin{
-  from {opacity:0%};
-  to {opacity:100%}
+  0% {opacity:0%; bottom:20px};
+  50% {opacity:50%; bottom:10px}
+  100% {opacity:100%; bottom:0px}
 }
