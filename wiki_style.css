@@ -5,7 +5,7 @@ head {
 }
 
 body {
-    margin:0;
+  margin:0;
   }
 
   h1 {
@@ -27,8 +27,6 @@ body {
 .bottom{
   background-color:rgba(139,238,195,100);
 }
-
-
 
 /* LINKS */
 
@@ -61,7 +59,9 @@ a:active {
   to {background-color:rgb(255, 255, 196)};
 }
 
-/* NAVIGATION BAR (+STICKY BAR SCRIPT) */
+/* NAVIGATION BAR 
+STICKY BAR SCRIPT
+SIDEPANEL TOGGLE SCRIPT */
 
 #navbar {
   opacity:50%;
@@ -73,7 +73,7 @@ a:active {
   padding-right: 16px;
   margin-left: -8px;
   position:fixed!important;
-  z-index:1
+  z-index:1;
 }
 
 .content {padding-top: 16px; margin: 0px 7.5px}
@@ -81,6 +81,12 @@ a:active {
 .sticky {position: fixed; top: 0; width: 100%}
 
 .sticky + .content {padding-top: 102px;}
+
+.side-panel-toggle {
+  width:200px;
+  height: 200px;
+
+}
 
 /* DROPDOWN SCRIPT */
 
