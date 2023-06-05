@@ -9,41 +9,46 @@ body {
   }
 
   h1 {
-    color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
     margin-left: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
     padding-top: 100px;
+    text-align: center
   }
 
-.pagesplit {
+.page {
   display:flex;
   flex-direction: column;
+  background-color: rgb(19, 72, 90);
 }
 
-.top{
-  background-color:rgba(254,196,15);
+.textbox {
+  padding:10px,10px;
+  background-color: rgb(255, 255, 255);
+  margin: 40px 20%;
+  padding: 30px
 }
-
-.bottom{
-  background-color:rgba(139,238,195,100);
+p {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-size:24px;
+  color:black;
+  text-align: justify;
 }
 
 /* LINKS */
 
 a {
-    color: rgb(156, 156, 156);
+    color: rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:rgb(180, 0, 0);
-    border-radius: 5px;
-    border: 2px solid #73AD21;
     padding: 2px 3.5%;
     text-decoration: none;
     margin: 0.5%;
     line-height: 250%;
     float: center;
+    background-color:rgb(245, 245, 245)
   }
 
-a:hover{background-color: inherit;
+a:hover{
   animation-name: hovereffect;
   animation-duration: 0.5s;
 }
@@ -55,8 +60,8 @@ a:active {
 }
 
 @keyframes hovereffect{
-  from {background-color:rgb(180, 0, 0)};
-  to {background-color:rgb(255, 255, 196)};
+  from {color:rgb(0, 0, 0)};
+  to {color:rgb(170, 170, 170)};
 }
 
 /* NAVIGATION BAR 
@@ -74,6 +79,7 @@ SIDEPANEL TOGGLE SCRIPT */
   margin-left: -8px;
   position:fixed!important;
   z-index:1;
+  color:rgb(42, 42, 42)
 }
 
 .content {padding-top: 16px; margin: 0px 7.5px}
@@ -82,7 +88,9 @@ SIDEPANEL TOGGLE SCRIPT */
 
 .sticky + .content {padding-top: 102px;}
 
-.side-panel-toggle {
+.side-panel-space {margin-left:200px}
+
+.side-panel-button {
   width:200px;
   height: 200px;
 
