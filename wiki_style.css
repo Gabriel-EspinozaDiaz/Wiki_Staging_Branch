@@ -49,13 +49,20 @@ a {
   }
 
 a:hover{
-  animation-name: hovereffect;
+  color:inherit;
+  animation-name: hoverEffect;
   animation-duration: 5s;
 }
 
-@keyframes hovereffect{
-  from {color:rgb(255,255,255)};
+
+@keyframes hoverEffect{
+  from {color:rgb(217, 217, 217)};
   to {color:rgb(0, 0, 0)};
+}
+
+@keyframes selectEffect {
+  from {};
+  to {};
 }
 
 /* NAVIGATION BAR 
