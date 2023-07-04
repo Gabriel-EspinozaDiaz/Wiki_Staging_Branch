@@ -120,23 +120,39 @@ SIDEPANEL TOGGLE SCRIPT */
 
 /* Testing */
 
+.xtSection {
+  background-color: rgba(0, 0, 0, 0.701961);
+  width: 400px;
+  height: 400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .testingIMG {
+  width: 100px;
+  height: 100px;
+}  
+.testingIMG:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.testFrame {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  -webkit-transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
-}  
-  .testingIMG:hover {
+}
+
+.testFrame:hover {
   display: inherit;
   margin-left: inherit;
   margin-right: inherit;
   border-radius: inherit;
   width: inherit;
   height: inherit;
-  -webkit-transform: scale(1.2) rotate(0.01deg);
-  transform: scale(1.2) rotate(0.01deg);
+  transform: scale(1.2,1.2);
 }
