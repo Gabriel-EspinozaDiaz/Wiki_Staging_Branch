@@ -19,12 +19,11 @@ body {
 .page {
   display:flex;
   flex-direction: column;
-  background-color: rgb(19, 72, 90);
+  background-color: #6cae9a;
 }
 
 .textbox {
   padding:10px,10px;
-  background-color: rgb(255, 255, 255);
   margin: 40px 20%;
   padding: 30px
 }
@@ -33,6 +32,18 @@ p {
   font-size:24px;
   color:black;
   text-align: justify;
+}
+
+.whitetext {
+  color:white !important
+}
+
+.graytext {
+  color:gray !important
+}
+
+.lightgraytext {
+  color:lightgray !important
 }
 
 /* LINKS */
@@ -128,23 +139,47 @@ SIDEPANEL TOGGLE SCRIPT */
   margin-right:auto;
 }
 
-.testingIMG {
+.testingIMG1 {
   display: block;
-  width: 99%;
-  height: 99%;
+  width: 40%;
+  height: 40%;
   margin-left:auto;
   margin-right:auto;
-  margin-top:auto;
-  margin-bottom:auto;
+  transition: transform 0.4s;
 }  
 
+.testingIMG1:hover {
+  transform: scale(1.8,1.8);
+}
+
+.testingIMG2 {
+  margin-top:-40%;
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin-left:auto;
+  margin-right:auto;
+  transition: transform 0.4s;
+  opacity: 80%;
+}  
+
+.testingIMG2:hover {
+  transform: scale(1.8,1.8) rotate(180deg);
+}
+
 .testFrame {
+  margin-top: 60%;
   margin-left: 30%;
   width: 160px;
   height: 160px;
-  transition: transform 0.4s;
+  background-color: red;
 }
 
-.testFrame:hover {
-  transform: scale(1.8,1.8);
+.social {
+  width:6.2%;
+  height:6.2%;
+}
+
+.socialLink {
+  color:#ffe669ff;
 }
