@@ -15,15 +15,15 @@ window.addEventListener('scroll',() =>{
 
 
 //Frame Effect
-const hoverItem = document.querySelector('.testingIMG2');
+const testingIMG2 = document.querySelector('.testingIMG2');
 const otherDiv = document.querySelector('.testingIMG1');
 
-hoverItem.addEventListener('mouseover', function() {
-  otherDiv.classList.add('transformed');
+testingIMG2.addEventListener('mouseover', function() {
+  testingIMG1.classList.add('transformed');
 });
 
-hoverItem.addEventListener('mouseout', function() {
-  otherDiv.classList.remove('transformed');
+testingIMG2.addEventListener('mouseout', function() {
+  testingIMG1.classList.remove('transformed');
 });
 
 
