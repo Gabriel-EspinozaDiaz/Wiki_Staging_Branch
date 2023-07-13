@@ -16,7 +16,7 @@ window.addEventListener('scroll',() =>{
 
 //Frame Effect
 const testingIMG2 = document.querySelector('.testingIMG2');
-const otherDiv = document.querySelector('.testingIMG1');
+const testingIMG1 = document.querySelector('.testingIMG1');
 
 testingIMG2.addEventListener('mouseover', function() {
   testingIMG1.classList.add('transformed');
@@ -26,7 +26,16 @@ testingIMG2.addEventListener('mouseout', function() {
   testingIMG1.classList.remove('transformed');
 });
 
+const hoverItem = document.querySelector('.hover-item');
+const otherDiv = document.querySelector('.other-div');
 
+hoverItem.addEventListener('mouseover', function() {
+  otherDiv.classList.add('transformed');
+});
+
+hoverItem.addEventListener('mouseout', function() {
+  otherDiv.classList.remove('transformed');
+});
 
 
 

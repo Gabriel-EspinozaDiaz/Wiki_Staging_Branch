@@ -175,9 +175,31 @@ SIDEPANEL TOGGLE SCRIPT */
   background-color: red;
 }
 
+/* Given */
 
+.container {
+  display: flex;
+}
 
+.hover-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  transition: transform 0.3s;
+}
 
+.other-div {
+  background-color: #ffffff;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.hover-item:hover {
+  transform: scale(1.1);
+}
+
+.hover-item:hover + .other-div {
+  transform: rotate(20deg);
+}
 
 /* Social */
 
@@ -197,4 +219,6 @@ SIDEPANEL TOGGLE SCRIPT */
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  scale: 0.5;
+  font-size: 40px;
 }
