@@ -183,3 +183,11 @@ SIDEPANEL TOGGLE SCRIPT */
 .socialLink {
   color:#ffe669ff;
 }
+
+.maintenance {
+  display: block;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
