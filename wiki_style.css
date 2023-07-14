@@ -175,34 +175,7 @@ SIDEPANEL TOGGLE SCRIPT */
   background-color: red;
 }
 
-/* Given */
-
-.container {
-  display: flex;
-}
-
-.hover-item {
-  background-color: #f1f1f1;
-  padding: 10px;
-  transition: transform 0.3s;
-}
-
-.other-div {
-  background-color: #ffffff;
-  padding: 10px;
-  transition: transform 0.3s;
-}
-
-.hover-item:hover {
-  transform: scale(1.1);
-}
-
-.hover-item:hover + .other-div {
-  transform: rotate(20deg);
-}
-
 /* Social */
-
 
 .social {
   width:6.2%;
@@ -213,12 +186,29 @@ SIDEPANEL TOGGLE SCRIPT */
   color:#ffe669ff;
 }
 
-.maintenance {
+/* given++ */ 
+
+#bigboy {   background-color: rgba(0, 0, 0, 0.701961);
+  width: 400px;
+  height: 400px;
+  margin-left:auto;
+  margin-right:auto;}
+
+#port {background-image: url('media/iGEM logo.png');
+  margin-top:-40%;
   display: block;
-  text-align:center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  scale: 0.5;
-  font-size: 40px;
+  width: 40%;
+  height: 40%;
+  margin-left:auto;
+  margin-right:auto;
+  transition: transform 0.4s;
+  opacity: 80%;
+}
+
+#port:hover {
+  transform: scale(1.8,1.8);
+}
+
+#port>#frame {
+  transform: scale(1.8,1.8) rotate(180deg);
 }
