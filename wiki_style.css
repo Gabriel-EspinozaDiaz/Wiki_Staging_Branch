@@ -16,34 +16,28 @@ body {
     text-align: center
   }
 
-.page {
+.page1 {
   display:flex;
   flex-direction: column;
   background-color: #6cae9a;
 }
 
-.textbox {
-  padding:10px,10px;
-  margin: 40px 20%;
-  padding: 30px
+.page2 {
+  display:flex;
+  flex-direction: column;
+  background-color: #ffffff00;
 }
+
+#gradient {
+  height:200px;
+  background-image: linear-gradient(#6cae9a,#ffffff00)
+}
+
 p {
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
   font-size:24px;
   color:black;
   text-align: justify;
-}
-
-.whitetext {
-  color:white !important
-}
-
-.graytext {
-  color:gray !important
-}
-
-.lightgraytext {
-  color:lightgray !important
 }
 
 /* LINKS */
@@ -211,4 +205,12 @@ SIDEPANEL TOGGLE SCRIPT */
 
 #port>#frame {
   transform: scale(1.8,1.8) rotate(180deg);
+}
+
+.newport {
+  
+}
+
+.newport:hover {
+  
 }
