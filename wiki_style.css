@@ -207,40 +207,65 @@ SIDEPANEL TOGGLE SCRIPT */
 
 /* GIF */
 
-.gif-container {
+.image-container {
   position: relative;
   display: inline-block;
-  cursor: pointer;
-  /* Set the width and height according to your GIF dimensions */
-  width: 720px;
-  height: 720px;
+  /* Set the width and height according to your image/GIF dimensions */
+  width: 300px;
+  height: 200px;
   overflow: hidden;
 }
 
-.gif {
+.image {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
 }
 
-.gif.forward-gif {
-  animation: playForward 1s forwards;
+.still-1 {
+  opacity: 1;
 }
 
-.gif.backward-gif {
-  animation: playBackward 1s forwards;
+.still-2, .gif-2 {
+  pointer-events: none; /* Prevent hover events on these images while they are visible */
 }
 
-@keyframes playForward {
-  to {
-    opacity: 1;
-  }
+.image-container:hover .still-1 {
+  opacity: 0;
 }
 
-@keyframes playBackward {
+.image-container:hover .gif-1 {
+  opacity: 1;
+  animation: playGif1 0.5s forwards;
+}
+
+.image-container:hover .still-2 {
+  opacity: 1;
+}
+
+.image-container:not(:hover) .still-2 {
+  opacity: 0;
+}
+
+.image-container:not(:hover) .gif-2 {
+  opacity: 1;
+  animation: playGif2 0.5s forwards;
+}
+
+@keyframes playGif1 {
   to {
     opacity: 0;
   }
 }
+
+@keyframes playGif2 {
+  to {
+    opacity: 0;
+  }
+}
+
+
 
