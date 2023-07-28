@@ -211,8 +211,8 @@ SIDEPANEL TOGGLE SCRIPT */
   position: relative;
   display: inline-block;
   /* Set the width and height according to your image/GIF dimensions */
-  width: 300px;
-  height: 200px;
+  width: 720px;
+  height: 720px;
   overflow: hidden;
 }
 
@@ -221,7 +221,6 @@ SIDEPANEL TOGGLE SCRIPT */
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s;
   cursor: pointer;
 }
 
@@ -240,6 +239,7 @@ SIDEPANEL TOGGLE SCRIPT */
 .image-container:hover .gif-1 {
   opacity: 1;
   animation: playGif1 0.5s forwards;
+  animation-duration: 0s;
 }
 
 .image-container:hover .still-2 {
@@ -253,6 +253,7 @@ SIDEPANEL TOGGLE SCRIPT */
 .image-container:not(:hover) .gif-2 {
   opacity: 1;
   animation: playGif2 0.5s forwards;
+  animation-duration: 0s;
 }
 
 @keyframes playGif1 {
