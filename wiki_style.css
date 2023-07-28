@@ -59,7 +59,6 @@ a:hover{
   animation-duration: 5s;
 }
 
-
 @keyframes hoverEffect{
   from {color:rgb(217, 217, 217)};
   to {color:rgb(0, 0, 0)};
@@ -207,10 +206,30 @@ SIDEPANEL TOGGLE SCRIPT */
   transform: scale(1.8,1.8) rotate(180deg);
 }
 
-.newport {
-  
+/* GIF */
+
+.gif-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  /* Set the width and height according to your GIF dimensions */
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
 }
 
-.newport:hover {
-  
+.gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+  pointer-events: none; /* This prevents the GIF from blocking the hover effect */
+}
+
+.gif.forward-gif {
+  opacity: 1;
+}
+
+.gif.backward-gif {
+  opacity: 0;
 }

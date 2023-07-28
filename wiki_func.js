@@ -16,6 +16,19 @@ window.addEventListener('scroll',() =>{
 
 //Frame Effect
 
+const gifContainer = document.querySelector('.gif-container');
+const forwardGif = document.querySelector('.forward-gif');
+const backwardGif = document.querySelector('.backward-gif');
+
+gifContainer.addEventListener('mouseenter', () => {
+  forwardGif.style.opacity = 0;
+  backwardGif.style.opacity = 1;
+});
+
+gifContainer.addEventListener('mouseleave', () => {
+  forwardGif.style.opacity = 1;
+  backwardGif.style.opacity = 0;
+});
 
 
 
