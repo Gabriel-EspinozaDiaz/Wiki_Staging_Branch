@@ -215,7 +215,6 @@ SIDEPANEL TOGGLE SCRIPT */
   height: 720px;
   overflow: hidden;
 }
-
 .image {
   position: absolute;
   top: 0;
@@ -223,45 +222,69 @@ SIDEPANEL TOGGLE SCRIPT */
   opacity: 0;
   cursor: pointer;
 }
-
 .still-1 {
   opacity: 1;
 }
-
 .still-2, .gif-2 {
   pointer-events: none; /* Prevent hover events on these images while they are visible */
 }
-
 .image-container:hover .still-1 {
   opacity: 0;
 }
-
 .image-container:hover .gif-1 {
   opacity: 1;
   animation: playGif1 0.5s forwards;
 }
-
 .image-container:hover .still-2 {
   opacity: 1;
 }
-
 .image-container:not(:hover) .still-2 {
   opacity: 0;
 }
-
 .image-container:not(:hover) .gif-2 {
   opacity: 1;
   animation: playGif2 0.5s forwards;
 }
-
 @keyframes playGif1 {
   to {
     opacity: 0;
   }
 }
-
 @keyframes playGif2 {
   to {
     opacity: 0;
   }
+}
+
+/* nframe */
+
+.portrait {
+  display: block;
+  width: 65%;
+  height: 65%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 50%;
+}  
+
+.lock {
+  margin-top: -82.5%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  transition: transform 0.4s;
+}  
+
+.lock:hover {
+  transform: rotate(90deg);
+}
+
+.backframe {
+  margin-top: 20%;
+  width: 360px;
+  height: 360px;
+  margin-left:auto;
+  margin-right:auto;
 }
