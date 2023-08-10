@@ -281,7 +281,45 @@ SIDEPANEL TOGGLE SCRIPT */
   transform: rotate(90deg);
 }
 
-.backframe {
+#backframe {
+  margin-top: 20%;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 370px;
+  height: 360px;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+
+/* Do not change anything below */
+
+.preportrait {
+  display: block;
+  width: 65%;
+  height: 65%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 50%;
+}  
+
+.prelock {
+  margin-top: -82.5%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  transition: transform 0.4s;
+}  
+
+.prelock:hover {
+  transform: rotate(90deg);
+}
+
+.prebackframe {
   margin-top: 20%;
   width: 360px;
   height: 360px;
