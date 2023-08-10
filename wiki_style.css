@@ -282,7 +282,7 @@ SIDEPANEL TOGGLE SCRIPT */
 }
 
 #backframe {
-  margin-top: 20%;
+  margin-top: 40%;
   position: absolute;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -326,3 +326,40 @@ SIDEPANEL TOGGLE SCRIPT */
   margin-left:auto;
   margin-right:auto;
 }
+
+/* Do not change anything above */ 
+
+.portrait2 {
+  display: block;
+  width: 65%;
+  height: 65%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 50%;
+}  
+
+.lock2 {
+  margin-top: -82.5%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  transition: transform 0.4s;
+  background: url(media/gedb.png) no-repeat;
+  cursor:pointer;
+  border: none !important
+}  
+
+.lock2:hover {
+  transform: rotate(90deg);
+}
+
+.backframe2 {
+  margin-top: 20%;
+  width: 360px;
+  height: 360px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
