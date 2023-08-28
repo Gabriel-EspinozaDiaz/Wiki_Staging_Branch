@@ -20,16 +20,13 @@
     </div>
   </div>
 
-  <!-- Modal container -->
   <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="myModalLabel">Alert</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" id="modalBody">
-          <!-- Alert content will be dynamically updated here -->
         </div>
       </div>
     </div>
@@ -40,19 +37,28 @@
     const modalBody = document.getElementById('modalBody');
 
     document.getElementById("button1").addEventListener("click", function() {
-      showModal("Alert from Button 1");
+      showModal("Gabriel Espinoza Diaz","20","Biochem","Information Technology Lead","People taking pipettes and changing the dials while you\'re not looking","","","");
     });
 
     document.getElementById("button2").addEventListener("click", function() {
-      showModal("Alert from Button 2");
+      showModal("Hannah Kerr","22","Biotech Msc","Business Development Lead","When people take the iPad from my bench (Yes Dev I am looking at you)","","","");
     });
 
     document.getElementById("button3").addEventListener("click", function() {
-      showModal("Alert from Button 3");
+      showModal("Karen Leung","20","Biotech","Social Media","","","","");
     });
 
-    function showModal(message) {
-      modalBody.innerHTML = `<p>${message}</p>`;
+    function showModal(fullName,age,course,teamRole,petPeeve,email,linkedIn,bio) {
+      modalBody.innerHTML = 
+        `<h1>${fullName}</h1>
+        <hr>
+        <p><b>Age:</b> ${age}</p>
+        <p><b>Course:</b> ${course}</p>
+        <p><b>Team Role:</b> ${teamRole}</p>
+        <p><b>Lab Pet Peeve:</b> ${petPeeve}</p>
+        <p><b>Bio:</b> ${bio}</p>
+        <p><b>email:</b> ${email}</p>
+        <p><b>LinkedIn:</b> ${linkedIn}</p>`;
       modal.show();
     }
   </script>
