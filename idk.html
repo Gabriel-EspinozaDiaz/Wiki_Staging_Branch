@@ -17,6 +17,11 @@
     #alertContent hr {
       margin: 10px 0;
     }
+
+    .button-container .btn {
+      flex-basis: calc(33.33% - 15px); /* Adjust for spacing */
+    }
+    
   </style>
 </head>
 <body>
@@ -30,10 +35,9 @@
     </div>
   </div>
 
-  <!-- Alert container -->
   <div class="container mt-3">
-    <div class="alert alert-success d-none" id="alertBox" >
-      <!-- Alert content will be dynamically updated here -->
+    <div class="alert alert-success alert-dismissible fade show d-none" id="alertBox" role="alert">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       <div id="alertContent"></div>
     </div>
   </div>
