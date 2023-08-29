@@ -129,6 +129,7 @@ SIDEPANEL TOGGLE SCRIPT */
   height: 400px;
   margin-left:auto;
   margin-right:auto;
+  background-color: #fafafa;
 }
 
 .testingIMG1 {
@@ -363,3 +364,11 @@ SIDEPANEL TOGGLE SCRIPT */
   margin-right:auto;
 }
 
+/* LOGO TESTING */
+
+.testlogo {
+  padding-top: 50px;
+  display: block;
+  width: 65%;
+  height: 65%;
+}  
