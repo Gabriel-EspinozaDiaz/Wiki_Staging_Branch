@@ -371,4 +371,20 @@ SIDEPANEL TOGGLE SCRIPT */
   display: block;
   width: 65%;
   height: 65%;
+  margin-left:auto;
+  margin-right:auto;
 }  
+
+.ssbb {
+  display: flex
+}
+
+/* LOGO SIZING */ 
+
+.nsec {
+    background-color:aqua;
+}
+
+.sponsor {
+  width:100px
+}
