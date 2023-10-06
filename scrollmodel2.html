@@ -15,57 +15,15 @@
         }
 
         .bottom-left-button {
-            margin-left: 6%;
-            margin-right: 79%;
-            background-color: #007BFF;
-            animation: fadeInLeft 0.5s ease-in-out; 
+            margin-right: 10px; /* Adjust the margin as needed */
+            background-color: #007BFF; /* Button color */
         }
 
         .bottom-right-button {
             background-color: #6C757D; /* Button color */
-            animation: fadeInRight 0.5s ease-in-out; /* Animation when appearing */
-        }
-
-        /* Animation when disappearing */
-        .bottom-left-button.hide,
-        .bottom-right-button.hide {
-            opacity: 0;
-            animation: fadeOut 0.5s ease-in-out;
         }
 
         /* Add any additional styling as needed */
-        
-        /* Keyframe animations */
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeOut {
-            from {
-                opacity: 1;
-            }
-            to {
-                opacity: 0;
-            }
-        }
     </style>
 </head>
 <body>
@@ -77,10 +35,10 @@
     <!-- Buttons container at the bottom with Bootstrap classes -->
     <div class="d-flex justify-content-between sticky-buttons" id="buttonContainer">
         <!-- Button on the bottom-left corner -->
-        <button class="btn btn-primary bottom-left-button hide" id="bottomLeftButton">Left Button</button>
+        <button class="btn btn-primary bottom-left-button" id="bottomLeftButton">Left Button</button>
 
         <!-- Button on the bottom-right corner -->
-        <button class="btn btn-secondary bottom-right-button hide" id="bottomRightButton">Right Button</button>
+        <button class="btn btn-secondary bottom-right-button" id="bottomRightButton">Right Button</button>
     </div>
 
     <!-- Add Bootstrap JavaScript and jQuery (required for some Bootstrap features) -->
@@ -92,18 +50,13 @@
             const scrollY = window.scrollY;
             const threshold = 106;
             const buttonContainer = document.getElementById("buttonContainer");
-            const leftButton = document.getElementById("bottomLeftButton");
-            const rightButton = document.getElementById("bottomRightButton");
 
             if (scrollY > threshold) {
                 // Show buttons and make them sticky
                 buttonContainer.style.display = "flex";
-                leftButton.classList.remove("hide");
-                rightButton.classList.remove("hide");
             } else {
                 // Hide buttons
-                leftButton.classList.add("hide");
-                rightButton.classList.add("hide");
+                buttonContainer.style.display = "none";
             }
         }
 

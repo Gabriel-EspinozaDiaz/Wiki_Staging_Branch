@@ -15,15 +15,12 @@
         }
 
         .bottom-left-button {
-            margin-left: 6%;
-            margin-right: 79%;
-            background-color: #007BFF;
-            animation: fadeInLeft 0.5s ease-in-out; 
+            margin-right: 10px; /* Adjust the margin as needed */
+            background-color: #007BFF; /* Button color */
         }
 
         .bottom-right-button {
             background-color: #6C757D; /* Button color */
-            animation: fadeInRight 0.5s ease-in-out; /* Animation when appearing */
         }
 
         /* Animation when disappearing */
@@ -87,6 +84,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
     <script>
+        let scrolledPastThreshold = false; // Variable to track if scrolled past 106px threshold
+
         // Function to handle button visibility based on scroll position
         function handleButtonVisibility() {
             const scrollY = window.scrollY;
@@ -95,13 +94,16 @@
             const leftButton = document.getElementById("bottomLeftButton");
             const rightButton = document.getElementById("bottomRightButton");
 
-            if (scrollY > threshold) {
-                // Show buttons and make them sticky
+            if (!scrolledPastThreshold && scrollY > threshold) {
+                // User has scrolled past the threshold for the first time
+                scrolledPastThreshold = true;
+
+                // Show buttons and play animations
                 buttonContainer.style.display = "flex";
                 leftButton.classList.remove("hide");
                 rightButton.classList.remove("hide");
-            } else {
-                // Hide buttons
+            } else if (scrolledPastThreshold && scrollY <= threshold) {
+                // Hide buttons and play animations
                 leftButton.classList.add("hide");
                 rightButton.classList.add("hide");
             }

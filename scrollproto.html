@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Buttons</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for buttons */
+        .sticky-buttons {
+            position: sticky;
+            bottom: 20px;
+            z-index: 1000; /* Ensure buttons appear above other content */
+        }
+
+        .bottom-left-button {
+            margin-right: 10px; /* Adjust the margin as needed */
+            background-color: #007BFF; /* Button color */
+        }
+
+        .bottom-right-button {
+            background-color: #6C757D; /* Button color */
+        }
+
+        /* Add any additional styling as needed */
+    </style>
+</head>
+<body>
+    <!-- Filler content to enable scrolling -->
+    <div style="height: 2000px;">
+        <!-- Add your content here -->
+    </div>
+
+    <!-- Buttons container at the bottom with Bootstrap classes -->
+    <div class="d-flex justify-content-between sticky-buttons">
+        <!-- Button on the bottom-left corner -->
+        <button class="btn btn-primary bottom-left-button" id="bottomLeftButton">Left Button</button>
+
+        <!-- Button on the bottom-right corner -->
+        <button class="btn btn-secondary bottom-right-button" id="bottomRightButton">Right Button</button>
+    </div>
+
+    <!-- Add Bootstrap JavaScript and jQuery (required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
