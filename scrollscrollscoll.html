@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Buttons</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for buttons */
+        .bottom-left-button,
+        .bottom-right-button {
+            position: absolute;
+            bottom: 20px;
+            display: none; /* Initially hidden */
+        }
+
+        /* Add any additional styling as needed */
+
+        /* Custom CSS for sticky behavior */
+        .sticky-buttons {
+            position: sticky;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button on the bottom-left corner -->
+    <button class="btn btn-primary bottom-left-button" id="bottomLeftButton">Left Button</button>
+
+    <!-- Button on the bottom-right corner -->
+    <button class="btn btn-secondary bottom-right-button" id="bottomRightButton">Right Button</button>
+
+    <!-- Your page content goes here -->
+
+    <!-- Add Bootstrap JavaScript and jQuery (required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+    <script>
+        // Function to handle button visibility based on scroll position
+        function handleButtonVisibility() {
+            const scrollY = window.scrollY;
+            const threshold = 106;
+
+            if (scrollY > threshold) {
+                // Show buttons and make them sticky
+                document.querySelector('#bottomLeftButton').classList.add('sticky-buttons');
+                document.querySelector('#bottomRightButton').classList.add('sticky-buttons');
+            } else {
+                // Hide buttons
+                document.querySelector('#bottomLeftButton').classList.remove('sticky-buttons');
+                document.querySelector('#bottomRightButton').classList.remove('sticky-buttons');
+            }
+        }
+
+        // Attach the scroll event listener
+        window.addEventListener('scroll', handleButtonVisibility);
+
+        // Call the function on page load to handle initial state
+        handleButtonVisibility();
+    </script>
+</body>
+</html>
