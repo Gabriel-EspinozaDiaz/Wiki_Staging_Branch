@@ -1,0 +1,1233 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment setup</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="imported_styles.css">
+  <style>
+    table {border-collapse: collapse;width: 100%;}
+    th, td {border: 1px solid #ddd;padding: 8px;text-align: left;}
+    th {background-color: #f2f2f2;}
+  </style>
+</head>
+<body>
+<div class="row mt-4">
+
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <h1>Protocols</h1>
+      <hr>
+
+      <h2 class="center">Preparation of 0,8% Agarose Gel</h2>
+      <ol>
+        <li>Mix 0,8 g of agarose and 100 ml of 1x TAE;</li>
+        <li>Heat up for 2 min;</li>
+        <li>Leave to cool down;</li>
+        <li>Add 5 µl of Ethidium Bromide (10mg/ml);</li>
+        <li>Put on gel caster;</li>
+        <li>Let it cool down and gelify;</li>
+        <li>If not to use right away, store in fridge.</li>
+      </ol>
+
+      <h2>Running DNA on Gel</h2>
+      <ol>
+        <li>Put gel on running apparatus;</li>
+        <li>Load 10 µl of ladders</li>
+        <li>Load samples ( x amount sample + 6x loading buffer + H<sub>2</sub>O)</li>
+        <li>Run 90 mV for 45 min.</li>
+      </ol>
+      <h2>Loading buffer</h2>
+        <ul>
+          <li>333 µl of 60% glycerol</li>
+          <li>10µl of 0.5M EDTA</li>
+          <li>20-100µl 6xDye</li>
+          <li>Complete till 1ml with H<sub>2</sub>O</li>
+        </ul>
+
+      <h2>Competent cell preparation</h2>
+      <ol>
+        <li>1 ml of an overnight E. coli culture was transferred to 100 ml of LB media and incubated at 37 °C and 200 rpm until OD = 0.4 - 0.6.</li>
+        <li>The culture was poured into 50 ml falcon tubes, cooled on ice for 30 minutes and centrifuged at 4 °C and 4000 rpm for 5 minutes.</li>
+        <li>The media was discarded, and the pellet was resuspended in 25 ml 0.1 M of ice cold MgCl<sub>2</sub>.</li>
+        <li>The cells were cooled on ice for 30 minutes and spun down at 4 °C 4000 rpm for 5 minutes.</li>
+        <li>The supernatant was discarded, the pellet was resuspended in 25 ml 0.1 M of ice cold CaCl<sub>2</sub>.</li>
+        <li>The cells were cooled on ice for 30 minutes and spun down at 4 °C at 4000 rpm for 5 minutes.</li>
+        <li>The supernatant was discarded, and the pellet was resuspended in 1.25 ml ice cold CaCl<sub>2</sub>/glycerol solution (1.7 mL 0.1 M CaCl<sub>2</sub>, 0.3 ml 100 % glycerol).</li>
+        <li>The suspension was divided into 100 µl aliquots that were flash frozen in liquid nitrogen and stored at -80 °C.</li>
+      </ol>
+
+      <h2>Minipreps</h2>
+      <ol>
+        <li>An overnight culture was grown and centrifuged at 4000 rpm for 5 minutes.</li>
+        <li>The media was removed, and the pellet resuspended in 250 µl P1 buffer.</li>
+        <li>250 µl of P2 buffer were added, and the mixture was mixed well.</li>
+        <li>350 µl of N3 buffer were added, and the mixture was mixed well.</li>
+        <li>The tube was centrifuged at 13000 rpm for 10 minutes, 800 µl of the supernatant were added to the QIAprep spin column.</li>
+        <li>The column was centrifuged at 13000 rpm for 1 minute.</li>
+        <li>0.75 ml PE buffer were added to the column.</li>
+        <li>The tube was centrifuged at 13000 rpm for 1 minute.</li>
+        <li>The column was transferred to a new Eppendorf tube, 50 µl of EB buffer were added to the column.</li>
+        <li>DNA was eluted after centrifuging 13000 rpm for 1 minute.</li>
+      </ol>
+
+      <h2>PCR Cleanup (Qiagen)</h2>
+      <ol>
+        <li>6X PB buffer was added to the PCR mixture and moved to the QIAquick spin column.</li>
+        <li>The column was centrifuged at 13000 rpm for 1 minute, the flow through was discarded.</li>
+        <li>0.75 ml PE buffer were added to the column.</li>
+        <li>The column was centrifuged again at 13000 rpm for 1 minute, the flow through was discarded.</li>
+        <li>The column was centrifuged at 13000 rpm for 1 minute to remove any residual buffer.</li>
+        <li>The column was transferred to a new Eppendorf tube and 30 µl of EB buffer was added.</li>
+        <li>Purified DNA was eluted by centrifuging the column at 13000 rpm for 1 minute.</li>
+      </ol>
+
+      <h2>PCR Cleanup (Monarch, 5 μg)</h2>
+      <p>All centrifugation steps should be carried out at 16,000 x g (~13K RPM in a typical microcentrifuge).</p>
+      <ol>
+        <li>
+          Dilute sample with DNA Cleanup Binding Buffer (ensure that isopropanol has been added, as indicated on the bottle label)* according to the table below. Mix well by pipetting up and down or flicking the tube. Do not vortex. A starting sample volume of 20&ndash;100 μl is recommended. For smaller samples, TE can be used to adjust the volume. For diluted samples larger than 800 μl, load a portion of the sample, proceed with Step 2, and then repeat as necessary.
+          <p>*Beginning in April 2021, the DNA Cleanup Binding Buffer will be changed to a concentrated format which requires the addition of isopropanol by the user. Please refer to the instructions inside of the product that you receive.</p>
+          <table>
+            <tr>
+              <th>SAMPLE TYPE</th>
+              <th>RATIO OF BINDING BUFFER: SAMPLE</th>
+              <th>EXAMPLE</th>
+            </tr>
+            <tr>
+              <td>dsDNA > 2 kb (plasmids, gDNA)</td>
+              <td>2:1</td>
+              <td>200 μl:100 μl</td>
+            </tr>
+            <tr>
+              <td>dsDNA < 2 kb (some amplicons, fragments)</td>
+              <td>5:1</td>
+              <td>500 μl:100 μl</td>
+            </tr>
+            <tr>
+              <td>ssDNA > 200 nt**</td>
+              <td>7:1</td>
+              <td>700 μl:100 μl</td>
+            </tr>
+          </table>
+          <p>** Please note that recovery of ssDNA < 200 nts can be increased by using the Oligonucleotide Cleanup Protocol, but doing so will shift the cutoff size for DNA binding to 18 nt (versus 50 nt).</p>
+        </li>
+        <li>Insert column into collection tube and load sample onto column and close the cap. Spin for 1 minute, then discard flow-through. To save time, spin for 30 seconds, instead of 1 minute.  </li>
+        <li>Re-insert column into collection tube. Add 200 μl DNA Wash Buffer and spin for 1 minute. Discarding flow-through is optional.</li>
+        <li>Repeat wash (Step 3).</li>
+        <li>Transfer column to a clean 1.5 ml microfuge tube. Use care to ensure that the tip of the column does not come into contact with the flow-through. If in doubt, re-spin for 1 minute to ensure traces of salt and ethanol are not carried over to the next step.</li>
+        <li>Add ≥ 6 μl of DNA Elution Buffer to the center of the matrix. Wait for 1 minute, then spin for 1 minute to elute DNA.
+          <p>Note: Typical elution volumes are 6&ndash;20 μl. Nuclease-free water (pH 7&ndash;8.5) can also be used to elute the DNA. Yield may slightly increase if a larger volume of DNA Elution Buffer is used, but the DNA will be less concentrated. For larger size DNA (≥ 10 kb), heating the elution buffer to 50°C prior to use can improve yield. Care should be used to ensure the elution buffer is delivered onto the matrix and not the wall of the column to maximize elution efficiency. To save time, spin for 30 seconds, instead of 1 minute.</p>
+        </li>
+      </ol>
+
+      <h2>Transformations</h2>
+      <ol>
+        <li>10 µl of plasmid DNA or reaction mixture were added to 100 µl of competent E. coli cells and left on ice for 30 minutes</li>
+        <li>The cells were heat shocked at 42 °C for 30 seconds, then returned to ice for 30 seconds.</li>
+        <li>1 ml of SOC media was added.</li>
+        <li>The cells were incubated at 37 °C and 200 rpm for 45 minutes.</li>
+        <li>The tube was spun down at 13000 rpm for 1 minute, and the media was removed.</li>
+        <li>Bacterial pellet was resuspended in 100 µl of SOC, then plated.</li>
+      </ol>
+
+      <h2>High Efficiency Transformation Protocol (Genomic DNA Production)</h2>
+      <p>This protocol was performed to produce genomic DNA from which genes could be extracted.</p>
+      <p>Use this procedure to transform MG1655 chemically competent cells. We recommend verifying the transformation efficiency of the cells using the pUC19 control DNA supplied with the kit. Do not use these cells for electroporation.</p>
+      
+      <ol>
+        <li>Remove competent cells from the -80 °C freezer and thaw completely on wet ice (10-15 minutes).</li>
+        <li>Aliquot 1-5 µl (1 pg-100 ng) of DNA to the chilled microcentrifuge tubes on ice.</li>
+        <li>When the cells are thawed, add 50 μl of cells to each DNA tube on ice and mix gently by tapping 4-5 times. For the pUC19 control, add 1 µl of (10 pg/µl) DNA to a chilled microcentrifuge tube, prior to adding 50 µl of cells. Mix well by tapping. Do not pipette up and down or vortex to mix, as this can harm cells and decrease transformation efficiency.</li>
+        <li>Incubate the cells with DNA on ice for 30 minutes.</li>
+        <li>After the 30-minute ice incubation, heat shock the cells at 42 °C for 45 seconds.</li>
+        <li>Transfer the tubes to ice for 2 minutes.</li>
+        <li>Add 950 µl of Recovery Medium or any other medium of choice to each tube.</li>
+        <li>Incubate tubes at 37 °C for 1 hour at 210 rpm.</li>
+        <li>Spread 50 μl to 200 μl from each transformation on pre-warmed selection plates. We recommend plating two different volumes to ensure that at least one plate will have well-spaced colonies. For the pUC19 control, plate 50 μl on an LB plate containing 100 μg/ml ampicillin. Use a sterilized spreader or autoclaved ColiRoller™ plating beads to spread evenly.</li>
+        <li>Incubate the plates overnight at 37 °C.</li>
+      </ol>
+
+      <h2>Restriction Digests</h2>
+      <ol>
+        <li>For a typical 20 µl reaction using Restriction enzyme, the reaction was set up as follows:</li>
+        <br>
+        <table>
+          <tr>
+            <th>Reagent</th>
+            <th>Volume or Mass Added</th>
+          </tr>
+          <tr>
+            <td>DNA</td>
+            <td>1 µg</td>
+          </tr>
+          <tr>
+            <td>10X reaction buffer</td>
+            <td>2 µl</td>
+          </tr>
+          <tr>
+            <td>Restriction Enzyme</td>
+            <td>1 µl</td>
+          </tr>
+          <tr>
+            <td>H<sub>2</sub>O</td>
+            <td>Up to 20 µl</td>
+          </tr>
+        </table>
+        <br>
+        <li>The mixture was incubated at 37 °C for 1 hour.</li>
+        <li>The completed reaction was run on an agarose gel to visualize the products.</li>
+      </ol>
+
+      <h2>PCR (Extraction, Domestication and Troubleshooting)</h2>
+      <br>
+
+      <h3>For Q5® High-Fidelity DNA Polymerase (M0491)</h3>
+      <p>Annealing temperatures were calculated on the NEB Tm calculator (<a href="http://tmcalculator.neb.com/#!/#!/">NEBTm Calculator</a>)</p>
+      <br>
+      <b>Reaction Setup:</b>
+      <table>
+        <tr>
+          <th>COMPONENT</th>
+          <th>25 µl REACTION</th>
+          <th>50 µl REACTION</th>
+          <th>FINAL CONCENTRATION</th>
+        </tr>
+        <tr>
+          <td>5X Q5 Reaction Buffer</td>
+          <td>5 µl</td>
+          <td>10 µl</td>
+          <td>1X</td>
+        </tr>
+        <tr>
+          <td>10 mM dNTPs</td>
+          <td>0.5 µl</td>
+          <td>1 µl</td>
+          <td>200 µM</td>
+        </tr>
+        <tr>
+          <td>10 µM Forward Primer</td>
+          <td>1.25 µl</td>
+          <td>2.5 µl</td>
+          <td>0.5 µM</td>
+        </tr>
+        <tr>
+          <td>10 µM Reverse Primer</td>
+          <td>1.25 µl</td>
+          <td>2.5 µl</td>
+          <td>0.5 µM</td>
+        </tr>
+        <tr>
+          <td>Template DNA</td>
+          <td>variable</td>
+          <td>variable</td>
+          <td>&lt; 1,000 ng</td>
+        </tr>
+        <tr>
+          <td>Q5 High-Fidelity DNA Polymerase</td>
+          <td>0.25 µl</td>
+          <td>0.5 µl</td>
+          <td>0.02 U/µl</td>
+        </tr>
+        <tr>
+          <td>5X Q5 High GC Enhancer (optional)</td>
+          <td>(5 µl)</td>
+          <td>(10 µl)</td>
+          <td>(1X)</td>
+        </tr>
+        <tr>
+          <td>Nuclease-Free Water</td>
+          <td>to 25 µl</td>
+          <td>to 50 µl</td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <b>Thermocycling Conditions for a Routine PCR:</b>
+      <table>
+        <tr>
+          <th>STEP</th>
+          <th>TEMP</th>
+          <th>TIME</th>
+        </tr>
+        <tr>
+          <td>Initial Denaturation</td>
+          <td>98°C</td>
+          <td>30 seconds</td>
+        </tr>
+        <tr>
+          <td>25&ndash;35 Cycles</td>
+          <td>98°C<br>50&ndash;72°C<br>72°C</td>
+          <td>5&ndash;10 seconds<br>10&ndash;30 seconds<br>20&ndash;30 seconds/kb</td>
+        </tr>
+        <tr>
+          <td>Final Extension</td>
+          <td>72°C</td>
+          <td>2 minutes</td>
+        </tr>
+        <tr>
+          <td>Hold</td>
+          <td>4&ndash;10°C</td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+
+      <h3>OneTaq® DNA Polymerase (M0480)</h3>
+      <p>Annealing temperatures were calculated on the NEB Tm calculator (<a href="http://tmcalculator.neb.com/#!/#!/">NEBTm Calculator</a>)</p>
+      <br>
+      <b>Reaction Setup:</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>25 μl reaction</th>
+          <th>50 μl reaction</th>
+          <th>Final Concentration</th>
+        </tr>
+        <tr>
+          <td>5X OneTaq Standard Reaction Buffer*</td>
+          <td>5 µl</td>
+          <td>10 μl</td>
+          <td>1X</td>
+        </tr>
+        <tr>
+          <td>10 mM dNTPs (#N0447)</td>
+          <td>0.5 µl</td>
+          <td>1 μl</td>
+          <td>200 µM</td>
+        </tr>
+        <tr>
+          <td>10 µM Forward Primer</td>
+          <td>0.5 µl</td>
+          <td>1 μl</td>
+          <td>0.2 µM</td>
+        </tr>
+        <tr>
+          <td>10 µM Reverse Primer</td>
+          <td>0.5 µl</td>
+          <td>1 μl</td>
+          <td>0.2 µM</td>
+        </tr>
+        <tr>
+          <td>OneTaq DNA Polymerase</td>
+          <td>0.125 µl</td>
+          <td>0.25 µl</td>
+          <td>1.25 units/50 µl</td>
+        </tr>
+        <tr>
+          <td>Template DNA</td>
+          <td>variable</td>
+          <td>variable</td>
+          <td>&lt; 1,000 ng</td>
+        </tr>
+        <tr>
+          <td>Nuclease-free water</td>
+          <td>to 25 µl</td>
+          <td>to 50 µl</td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <b>Thermocycling Conditions for a Routine PCR:</b>
+      <table>
+        <tr>
+          <th>STEP</th>
+          <th>TEMP</th>
+          <th>TIME</th>
+        </tr>
+        <tr>
+          <td>Initial Denaturation</td>
+          <td>94°C</td>
+          <td>30 seconds</td>
+        </tr>
+        <tr>
+          <td>30 Cycles</td>
+          <td>94°C<br>45-68°C<br>68°C</td>
+          <td>15-30 seconds<br>15-60 seconds<br>1 minute per kb</td>
+        </tr>
+        <tr>
+          <td>Final Extension</td>
+          <td>68°C</td>
+          <td>5 minutes</td>
+        </tr>
+        <tr>
+          <td>Hold</td>
+          <td>4-10°C</td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+
+      <h3>SuperFi DNA Polymerase (M0480)</h3>
+      <p>Invitrogen info sheet found <a href="https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0018859_Platinum_SuperFi_II_DNA_Pol_UG.pdf">here</a>.</p>
+      <br>
+      <b>Reaction Setup:</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Final concentration</th>
+          <th>20-µL rxn</th>
+          <th>50-µL rxn</th>
+        </tr>
+        <tr>
+          <td>5X SuperFit II Buffer</td>
+          <td>1X</td>
+          <td>4 µL</td>
+          <td>10 µL</td>
+        </tr>
+        <tr>
+          <td>Forward primer</td>
+          <td>0.5 µM</td>
+          <td>x µL</td>
+          <td>x µL</td>
+        </tr>
+        <tr>
+          <td>Reverse primer</td>
+          <td>0.5 µM</td>
+          <td>x µL</td>
+          <td>x µL</td>
+        </tr>
+        <tr>
+          <td>10 mM dNTPs</td>
+          <td>200 µM each</td>
+          <td>0.4 µL</td>
+          <td>1 µL</td>
+        </tr>
+        <tr>
+          <td>Template DNA</td>
+          <td>0.1–10 ng plasmid DNA (5–100 ng genomic DNA)</td>
+          <td>x µL</td>
+          <td>x µL</td>
+        </tr>
+        <tr>
+          <td>PlatinumTM SuperFiTY 11 DNA Polymerase</td>
+          <td>1X</td>
+          <td>0.4 µL</td>
+          <td>1 µL</td>
+        </tr>
+        <tr>
+          <td>Water, nuclease-free</td>
+          <td></td>
+          <td>to 20 µL</td>
+          <td>to 50 µL</td>
+        </tr>
+      </table>
+      <br>
+      <b>Thermocycling Conditions for a Routine PCR:</b>
+      <table>
+        <tr>
+          <th>Cycle step</th>
+          <th>Temperature</th>
+          <th>Time</th>
+          <th>Cycles</th>
+        </tr>
+        <tr>
+          <td>Initial denaturation</td>
+          <td>98°C</td>
+          <td>30 seconds</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Denaturation<br>Annealing<br>Extension</td>
+          <td>98°C<br>60°C<br>72°C</td>
+          <td>5-10 seconds<br>10 seconds<br>15-30 seconds per 1 kb</td>
+          <td>25-35</td>
+        <tr>
+          <td>Final extension</td>
+          <td>72°C</td>
+          <td>5 minutes</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Hold</td>
+          <td>4°C</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      
+      <h2>Colony PCR</h2>
+      <ol>
+        <li>Put 50 μl sterile water into PCR tubes. One for each of your chosen colonies.</li>
+        <li>Put 1 ml of LB media into a sterile Eppendorf tube. One for each of your chosen colonies.</li>
+        <li>Using your pipette set to 40 μl, pick up the colony of interest.</li>
+        <li>Resuspend the colony in 50 μl of water in a PCR tube.</li>
+        <li>Once the colony is resuspended, take 40 μl and inoculate the 1 ml of LB media.</li>
+        <li>You will be left with 10 μl of resuspended colony in your PCR tube. This is your DNA for your PCR.</li>
+        <li>Once you have done all your samples, freeze them at -20 °C for 10 minutes.</li>
+        <li>During this 10 minutes, make your master mix.</li>
+      </ol>
+
+      <h3>GoTaq® DNA Polymerase</h3>
+      <p>Promega info sheet found <a href="https://www.promega.co.uk/-/media/files/resources/protocols/product-information-sheets/g/gotaq-dna-polymerase-m300.pdf?la=en23">here</a>.</p>
+      <br>
+
+      <b>Reaction Setup:</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Final Concentration</th>
+          <th>Volume</th>
+        </tr>
+        <tr>
+          <td>5x Green GoTaq reaction buffer</td>
+          <td>1X (1.5 mM MgCl<sub>2</sub>)<sup>2</sup></td>
+          <td>5 µL</td>
+        </tr>
+        <tr>
+          <td>dNTP mix (10 mM)</td>
+          <td>0.2 mM</td>
+          <td>0.5 µL</td>
+        </tr>
+        <tr>
+          <td>Forwards primer (cPCRFor)</td>
+          <td>1:00 PM</td>
+          <td>2.5 µL</td>
+        </tr>
+        <tr>
+          <td>Reverse primer (cPCRRev)</td>
+          <td>1 µL</td>
+          <td>2.5 µL</td>
+        </tr>
+        <tr>
+          <td>GOTaq G2 DNA polymerase (Demonstrator has this)</td>
+          <td>1.25 u</td>
+          <td>0.125 µL</td>
+        </tr>
+        <tr>
+          <td>Template DNA</td>
+          <td></td>
+          <td>5 µL*</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td></td>
+          <td>9.375 µL</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>25 µL</strong></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+
+      <b>Reaction Setup:</b>
+      <table>
+        <tr>
+          <th>Step</th>
+          <th>Temperature</th>
+          <th>Time</th>
+          <th>Number of Cycles</th>
+        </tr>
+        <tr>
+          <td>Initial Denaturation</td>
+          <td>95°C</td>
+          <td>2 minutes</td>
+          <td>1 cycle</td>
+        </tr>
+        <tr>
+          <td>Denaturation</td>
+          <td>95°C</td>
+          <td>0.5-1 minute</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Annealing</td>
+          <td>42-65°C*</td>
+          <td>0.5-1 minute</td>
+          <td>25-35 cycles</td>
+        </tr>
+        <tr>
+          <td>Extension</td>
+          <td>72°C</td>
+          <td>1 minute per kb</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Final Extension</td>
+          <td>72°C</td>
+          <td>5 minutes</td>
+          <td>1 cycle</td>
+        </tr>
+        <tr>
+          <td>Soak</td>
+          <td>40°C</td>
+          <td>Indefinite</td>
+          <td></td>
+        </tr>
+      </table>
+      <p>* Annealing temperature should be optimized for each primer set based on the primer T<sub>m</sub>.</p>
+      
+      <h2>MAD Medium (1 L)</h2>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>NaCl</td>
+          <td>18 g</td>
+        </tr>
+        <tr>
+          <td>MgSO<sub>4</sub>·7H<sub>2</sub>O</td>
+          <td>5 g</td>
+        </tr>
+        <tr>
+          <td>A+ modified 100X</td>
+          <td>10 mL</td>
+        </tr>
+        <tr>
+          <td>Tris (125 g/L, pH 8.2)</td>
+          <td>8.3 mL</td>
+        </tr>
+        <tr>
+          <td>Modified D7 Metal 1000X</td>
+          <td>1 mL</td>
+        </tr>
+        <tr>
+          <td>NaNO<sub>3</sub></td>
+          <td>7 g</td>
+        </tr>
+        <tr>
+          <td>KH<sub>2</sub>PO<sub>4</sub>(1 M)</td>
+          <td>0.83 mL</td>
+        </tr>
+      </table>
+      <br>
+      <p>Autoclave OR sterilise using 0.22 µm filter and cool down to room temperature before adding the following:</p>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>FeCl<sub>3</sub>·6H<sub>2</sub>O (480 mM)</td>
+          <td>0.5 mL</td>
+        </tr>
+        <tr>
+          <td>Vitamin B12 - Cobalamin</td>
+          <td>1 mL</td>
+        </tr>
+      </table>
+      <br>
+
+      <h3>MAD Medium Stock Solutions</h3>
+
+      <b>Modified D7 Metal 1000X (1 L)</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>H<sub>3</sub>BO<sub>3</sub></td>
+          <td>2.86 g</td>
+        </tr>
+        <tr>
+          <td>MnCl<sub>2</sub>·4H<sub>2</sub>O</td>
+          <td>1.81 g</td>
+        </tr>
+        <tr>
+          <td>ZnSO4·7H<sub>2</sub>O</td>
+          <td>222 mg</td>
+        </tr>
+        <tr>
+          <td>Na<sub>2</sub>MoO4·2H<sub>2</sub>O</td>
+          <td>1.26 g</td>
+        </tr>
+        <tr>
+          <td>CuSO<sub>4</sub>·5H<sub>2</sub>O</td>
+          <td>79 mg</td>
+        </tr>
+        <tr>
+          <td>CoCl<sub>2</sub>·6H<sub>2</sub>O</td>
+          <td>40.3 mg</td>
+        </tr>
+      </table>
+      <br>
+      
+      <b>A+ Modified 100X (1 L)</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>KCl</td>
+          <td>60 g</td>
+        </tr>
+        <tr>
+          <td>NaNO<sub>3</sub></td>
+          <td>100 g</td>
+        </tr>
+        <tr>
+          <td>CaCl<sub>2</sub>·2H<sub>2</sub>O</td>
+          <td>37 g</td>
+        </tr>
+        <tr>
+          <td>Na<sub>2</sub>EDTA</td>
+          <td>3 g</td>
+        </tr>
+        <tr>
+          <td>KH<sub>2</sub>PO<sub>4</sub></td>
+          <td>5 g</td>
+        </tr>
+      </table>
+      <br>
+
+      <h2>BG11 100X Medium (1L)</h2>
+      <p>All components, with exception of buffers, must be autoclaved</p>
+      <br>
+      <b>Main Components</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>NaNO<sub>3</sub></td>
+          <td>149.6 g</td>
+        </tr>
+        <tr>
+          <td>MgSO<sub>4</sub>.7H<sub>2</sub>O</td>
+          <td>7.49 g</td>
+        </tr>
+        <tr>
+          <td>CaCl<sub>2</sub></td>
+          <td>3.60 g</td>
+        </tr>
+        <tr>
+          <td>Citric acid</td>
+          <td>0.60 g</td>
+        </tr>
+        <tr>
+          <td>Na<sub>2</sub>EDTA</td>
+          <td>1.12 mL of 0.25M solution, pH 8.0</td>
+        </tr>
+      </table>
+      <br>
+      <b>Trace Elements</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>H<sub>3</sub>BO<sub>3</sub></td>
+          <td>2.860 g</td>
+        </tr>
+        <tr>
+          <td>MnCl<sub>2</sub>·4H<sub>2</sub>O</td>
+          <td>1.810 g</td>
+        </tr>
+        <tr>
+          <td>ZnSO<sub>4</sub>·7H<sub>2</sub>O</td>
+          <td>0.220 g</td>
+        </tr>
+        <tr>
+          <td>Na<sub>2</sub>MoO<sub>4</sub>·2H<sub>2</sub>O</td>
+          <td>0.390 g</td>
+        </tr>
+        <tr>
+          <td>CuSO<sub>4</sub>·5H<sub>2</sub>O</td>
+          <td>0.080 g</td>
+        </tr>
+        <tr>
+          <td>Co(NO<sub>3</sub>)<sub>2</sub>·6H<sub>2</sub>O</td>
+          <td>0.050 g</td>
+        </tr>
+      </table>
+      <br>
+
+      <h3>Stock Solutions (g/100ml)</h3>
+      <br>
+      <b>Iron Stock</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Ferric citrate</td>
+          <td>0.6</td>
+        </tr>
+        <tr>
+          <td>(ALTERNATIVELY) Ferric ammonium citrate</td>
+          <td>1.11</td>
+        </tr>
+      </table>
+      <br>
+
+      <b>Phosphate Stock</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>K2HPO4</td>
+          <td>3.05</td>
+        </tr>
+      </table>
+      <br>
+      
+      <b>Na<sub>2</sub>CO<sub>3</sub> Stock</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Na<sub>2</sub>CO<sub>3</sub></td>
+          <td>2.0</td>
+        </tr>
+      </table>
+      <br>
+      
+      <b>Glucose Stock</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Glucose</td>
+          <td>9.0 g (= 0.5 M)</td>
+        </tr>
+      </table>
+      <p>store in the fridge</p>
+      <br>
+      
+      <h3>Buffers (g/100ml)</h3>
+      <br>
+
+      <b>TES buffer</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>TES</td>
+          <td>22.9</td>
+        </tr>
+      </table>
+      <p>Adjust with 1 M NaOH to pH 8.2 </p>
+      <br>
+
+      <b>HEPES buffer</b>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>HEPES</td>
+          <td>23.8</td>
+        </tr>
+      </table>
+      <p>Adjust with 1 M NaOH to pH 7.8 </p>
+      <br>
+
+      <h2>Other (g/100ml)</h2>
+      <br>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>NaHCO<sub>3</sub></td>
+          <td>8.4</td>
+        </tr>
+      </table>
+      <br>
+
+      <h2>Cyanogate Assembly Protocol</h2>
+      <br>
+
+      <b>Reaction Setup:</b>
+      <table>
+        <tr>
+          <th>Bpil Assembly Components (Level 0, T)</th>
+          <th>Bsal Assembly Components (Level 1)</th>
+        </tr>
+        <tr>
+          <td>50-100 ng of acceptor vector</td>
+          <td>50-100 ng of acceptor vector</td>
+        </tr>
+        <tr>
+          <td>For each vector/part to insert, use a 2:1 ratio of insert: acceptor vector.</td>
+          <td>For each vector/part to insert, use a 2:1 ratio of insert: acceptor vector.</td>
+        </tr>
+        <tr>
+          <td>2 µL 10 mM ATP (Table of Materials)</td>
+          <td>2 µL 10 mM ATP (Table of Materials)</td>
+        </tr>
+        <tr>
+          <td>2 µL buffer G (buffer for Bpil/Bsal)</td>
+          <td>2 µL buffer G (buffer for Bpil/Bsal)</td>
+        </tr>
+        <tr>
+          <td>2 µL BSA (10x) (Table of Materials)</td>
+          <td>2 µL BSA (lox) (Table of Materials)</td>
+        </tr>
+        <tr>
+          <td>10 units Bpil (1 µL 10 U/µL Bpil, Table of Materials)</td>
+          <td>10 units Bsal (1 µL 10 U/µL Bsal, Table of Materials)</td>
+        </tr>
+        <tr>
+          <td>Bring to 20 µL with dH2O.</td>
+          <td>Bring to 20 µL with dH2O.</td>
+        </tr>
+        <tr>
+          <td>200 units T4 DNA ligase (1 µL 200 U/µL, Table of Materials)</td>
+          <td>200 units T4 DNA ligase (1 µL 200 U/µL, Table of Materials)</td>
+        </tr>
+      </table>
+      <p>*Experimentation showed that ATP is optional.</p>
+      <br>
+
+      <b>Thermocycler Protocol:</b>
+      <table>
+        <tr>
+          <th>Level 0, T</th>
+          <th></th>
+          <th>Level 1</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>37 °C for 10 min<br>16 °C for 10 min</td>
+          <td>(cycle x 5)</td>
+          <td>37 °C for 10 min<br>16 °C for 10 min</td>
+          <td>(cycle x 5)</td>
+        </tr>
+        <tr>
+          <td>37 °C for 20 min</td>
+          <td></td>
+          <td>37 °C for 20 min</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>65 °C for 10 min</td>
+          <td></td>
+          <td>65 °C for 10 min</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16 °C (hold)</td>
+          <td></td>
+          <td>16 °C (hold)</td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+
+      <h2>JUMP Assembly (Level 1)</h2>
+      <ol>
+        <li>Create a reaction mix in a PCR tube with the following components:</li>
+        <table>
+          <tr>
+            <th>Reaction Component</th>
+            <th>Amount (μl)</th>
+          </tr>
+          <tr>
+            <td>ggpS epPCR digest (20fmol/μl)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>pJUMP29-1A acceptor vector (20fmol/μl)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>PJ23100 Promoter in level 0 (20fmol/μl)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>L3SAP51 terminator in level 0 (20fmol/μl)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>pET Ribosome Binding Site in level 0 (20fmol/μl)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>T4 DNA ligase - HF</td>
+            <td>0.25</td>
+          </tr>
+          <tr>
+            <td>BsaI-HF</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>T4 Ligase Buffer</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>ddH2O</td>
+            <td>Fill to 20</td>
+          </tr>
+        </table>
+        <li>Set the Thermocycler to run in the following cycles:</li>
+        <ul>
+          <li>1 cycle at 37°C for 15 minutes</li>
+          <li>25 cycles at 37°C for 3 minutes and 16°C for 3 minutes</li>
+          <li>1 cycle of 37°C for 15 minutes, 50°C for 5 minutes, and 80°C for 5 minutes</li>
+          <li>25 cycles of 37°C for 3 minutes and 16°C for 3 minutes</li>
+          <li>1 cycle of 37°C for 15 minutes, 50°C for 5 minutes, and 80°C for 5 minutes</li>
+          <li>Finally, hold the reaction at 4°C</li>
+        </ul>
+        <br>
+      </ol>
+      
+      <h2>Preparation of NaCl Lysogeny Broth and BL21 Growth Curve</h2>
+      <ol>
+        <li>Prepare Sterile 34% (w/v) Saline stock solution.</li>
+        <li>Add Saline solution in increasing amounts to LB in a falcon tube to create a medium of varying salt concentrations and then inoculate with 1ml of overnight culture BL21 using the table below:</li>
+        <table>
+          <tr>
+            <th>Concentration of NaCl in LB media (w/v)</th>
+            <th>Volume of 34% Saline Solution (mL)</th>
+            <th>Volume of LB media (mL)</th>
+          </tr>
+          <tr>
+            <td>0.5%</td>
+            <td>0</td>
+            <td>29</td>
+          </tr>
+          <tr>
+            <td>1%</td>
+            <td>0.441</td>
+            <td>28.559</td>
+          </tr>
+          <tr>
+            <td>1.5%</td>
+            <td>0.882</td>
+            <td>28.118</td>
+          </tr>
+          <tr>
+            <td>2%</td>
+            <td>1.323</td>
+            <td>27.677</td>
+          </tr>
+          <tr>
+            <td>2.5%</td>
+            <td>1.764</td>
+            <td>27.236</td>
+          </tr>
+          <tr>
+            <td>3%</td>
+            <td>2.205</td>
+            <td>26.795</td>
+          </tr>
+          <tr>
+            <td>3.5%</td>
+            <td>2.646</td>
+            <td>26.354</td>
+          </tr>
+          <tr>
+            <td>4%</td>
+            <td>3.087</td>
+            <td>25.913</td>
+          </tr>
+          <tr>
+            <td>4.5%</td>
+            <td>3.528</td>
+            <td>25.472</td>
+          </tr>
+          <tr>
+            <td>5%</td>
+            <td>3.969</td>
+            <td>25.031</td>
+          </tr>
+          <tr>
+            <td>5.5%</td>
+            <td>4.380</td>
+            <td>24.590</td>
+          </tr>
+          <tr>
+            <td>6%</td>
+            <td>4.821</td>
+            <td>24.149</td>
+          </tr>
+        </table>
+        <li>Take an initial OD600 from each of the cultures.</li>
+        <li>Incubate the cultures at 37°C, 250rpm.</li>
+        <li>Take a 1ml sample every hour and record the OD600 of each culture. If the OD600 of a culture is significantly more than 1, dilute the sample and measure the OD600.</li>
+      </ol>
+
+      <h2>Error Prone PCR</h2>
+      <ol>
+        <li>Create a reaction mix in a PCR tube with the following components:</li>
+        <table>
+          <tr>
+            <th>Reaction Component</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>10x NEB Taq DNA polymerase Thermopol buffer</td>
+            <td>5μl</td>
+          </tr>
+          <tr>
+            <td>Genomic Forward Primer</td>
+            <td>1μl</td>
+          </tr>
+          <tr>
+            <td>Genomic Reverse Primer</td>
+            <td>1μl</td>
+          </tr>
+          <tr>
+            <td>Taq polymerase</td>
+            <td>0.5μl</td>
+          </tr>
+          <tr>
+            <td>ggpS Level 0 Template DNA</td>
+            <td>50ng</td>
+          </tr>
+          <tr>
+            <td>MgCl<sub>2</sub></td>
+            <td>2.95mM</td>
+          </tr>
+          <tr>
+            <td>MnCl<sub>2</sub></td>
+            <td>0.1mM</td>
+          </tr>
+          <tr>
+            <td>ddH<sub>2</sub>O</td>
+            <td>Fill to 50μl</td>
+          </tr>
+        </table>
+        <li>Set the thermocycler to have an initial denaturation at 95°C for 1 minute, 25 cycles of 30 seconds at 95°C, 45 seconds at 53°C, and 90 seconds at 68°C, a final elongation at 68°C for 5 minutes, and hold at 4°C.</li>
+        <li>Purify the product with the Monarch DNA Gel Extraction kit (New England Biolabs) and store at -20°C.</li>
+      </ol>
+
+      <h2>Special Protocols</h2>
+      <br>
+      <h3>Ninhydrin Assay</h3>
+      <p>The ninhydrin test is a widely used method to detect the presence of amino acids in a sample. It is often used to determine amino acid expression or the presence of free amino acids. Here's a protocol for performing the ninhydrin test on a live overnight culture of Escherichia coli (E. coli) to determine amino acid expression:</p>
+      <br>
+
+      <b>Materials</b>
+      <ul>
+        <li>Overnight culture of E. coli</li>
+        <li>Ninhydrin solution (0.2% in acetone or ethanol)</li>
+        <li>2M Sodium acetate buffer (pH 6.0-6.5)</li>
+        <li>Test tubes</li>
+        <li>Water bath or heat block</li>
+        <li>Pipettes</li>
+        <li>Microcentrifuge (optional)</li>
+        <li>Spectrophotometer (optional)</li>
+      </ul>
+      
+      <br>
+      <b>Protocol</b>
+      <ol>
+        <li>Prepare the Ninhydrin Solution:
+          <ul>
+            <li>Prepare a fresh ninhydrin solution by dissolving 0.2 g of ninhydrin in 100 ml of acetone or ethanol. Mix well until the ninhydrin is completely dissolved.</li>
+          </ul>
+        </li>
+        <li>Prepare Sodium Acetate Buffer:
+          <ul>
+            <li>Prepare a 2M sodium acetate buffer solution at the desired pH (usually around 6.0-6.5). Adjust the pH using acetic acid or sodium hydroxide as needed.</li>
+          </ul>
+        </li>
+        <li>Harvest Cells (Optional):
+          <ul>
+            <li>If necessary, harvest the E. coli cells from the overnight culture by centrifugation. Wash the cells with a suitable buffer (e.g., phosphate-buffered saline) and resuspend them in a small volume of the sodium acetate buffer.</li>
+          </ul>
+        </li>
+        <li>Reaction Setup:
+          <ul>
+            <li>Label test tubes for each sample or standard you will be testing.</li>
+            <li>To each test tube, add:
+              <ul>
+                <li>1-2 ml of the sodium acetate buffer (pH 6.0-6.5)</li>
+                <li>100-200 µl of the E. coli culture (or equivalent volume of harvested cells)</li>
+                <li>If using standards, prepare a set of standards containing known concentrations of amino acids in the same buffer.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      
+        <li>Add Ninhydrin Solution:
+          <ul>
+            <li>Add 1-2 ml of the prepared ninhydrin solution to each test tube containing the samples and standards.</li>
+          </ul>
+        </li>
+      
+        <li>Heating:
+          <ul>
+            <li>Place the test tubes in a water bath or heat block preheated to around 80-100°C.</li>
+            <li>Incubate the tubes for about 10-20 minutes. The exact incubation time may vary based on the temperature and the specific amino acids being tested.</li>
+          </ul>
+        </li>
+      
+        <li>Color Development:
+          <ul>
+            <li>After incubation, remove the tubes from the water bath and allow them to cool to room temperature.</li>
+          </ul>
+        </li>
+      
+        <li>Measurement:
+          <ul>
+            <li>Measure the color development in each tube using a spectrophotometer at an appropriate wavelength (usually around 570 nm). Use the buffer with ninhydrin as a blank.</li>
+          </ul>
+        </li>
+      
+        <li>Data Analysis:
+          <ul>
+            <li>Compare the absorbance readings of the samples with the standard curve generated using known concentrations of amino acids. The intensity of color development indicates the presence and quantity of amino acids in the samples.</li>
+          </ul>
+        </li>
+      
+        <li>Interpretation:
+          <ul>
+            <li>Calculate the concentration of amino acids in the E. coli culture based on the standard curve and the absorbance readings.</li>
+          </ul>
+        </li>
+      </ol>
+      <br>
+
+      <b>Notes</b>
+      <ul>
+        <li>Add clarified cell lysate or commercial enzyme solution to the substrate (BSA, or chopped feathers) and incubate at 37°C in 100 mM potassium phosphate buffer (mixture of monobasic and dibasic) with pH=8, while shaking at 1000 rpm.</li>
+        <li>Stop the reaction at the specified timepoint by adding an equal volume of 10% trichloroacetic acid (TCA).</li>
+        <li>Remove the precipitated protein by centrifugation at 10000g for 10 minutes.</li>
+        <li>Add the supernatant to ninhydrin reagent (Sigma-Aldrich) in a 2:1 ratio and boil for 10 minutes.</li>
+        <li>Measure the absorbance at 570 nm. The color generation will be proportional to free amino acids released into the solution.</li>
+        <li>Compare reaction samples to a standard curve prepared with varying concentrations of amino acid (Glycine, L-lysine dihydrochloride, L-cysteine).</li>
+        <li>This protocol provides a basic framework for performing the ninhydrin test on live E. coli cultures to determine amino acid expression. The exact conditions and steps may need to be optimized based on the specific requirements of your experiment and the amino acids you are interested in. Always ensure proper safety precautions and handle chemicals and cultures with care. </li>
+      </ul>
+      <br>
+    </div>
+    <div class="col-lg-2"></div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!--
+        <h2></h2>
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+-->
+
+<!--
+        <h2></h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+-->
