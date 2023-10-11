@@ -137,6 +137,62 @@ footer a:hover { color: #90ee91ff; text-decoration: underline; }
 
   /* PLANT */
   /* RESULTS */
+
+  .horizontal-line {
+    width: 100%;
+    height: 4px; 
+    background-color: #000; 
+}
+.strand {
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
+    border: #000;
+    background-image: url("https://static.igem.wiki/teams/4849/wiki/lain.png");
+    background-position: center center;
+    background-size: 100% 110px; /* Set the image dimensions */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+.g-block {
+    width: 100px;
+    height: 100px; 
+    background-color: #72c685; 
+    margin: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    transition: border 0.3s; 
+    transition: background-color 0.3s;
+    font-size: large;
+}
+.g-block:hover {
+    background-color: #468d56; 
+    border: 2px solid #30623b; 
+}
+.utr1 {
+    width: 20px; 
+    height: 100px;
+    background-color: transparent;
+    margin: 10px; 
+    display: flex;
+}
+.utr2 {
+    width: 50px; 
+    height: 100px; 
+    background-color: transparent;
+    margin: 10px; 
+    display: flex;
+}
+.utr3 {
+    width: 80px; 
+    height: 100px; 
+    background-color: transparent;
+    margin: 10px; 
+    display: flex;
+}
   /* SAFETY */
   /* SOFTWARE */
   /* SUSTAINABLE */

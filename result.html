@@ -1,0 +1,510 @@
+<!-- This is an empty page with boostrap infrastructure DO NOT WRITE IN THIS -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results Staging Branch</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="imported_styles.css">
+    <style>
+        table {border-collapse: collapse;width: 100%;}
+        th, td {border: 1px solid #ddd;padding: 8px;text-align: left;}
+        th {background-color: #c3e6cb;}
+    .strand {
+        display: flex;
+        width: 100%;
+        justify-content: center; 
+        align-items: center; 
+        height: 10vh; 
+        border: #000;
+        background-image: url("https://static.igem.wiki/teams/4849/wiki/lain.png");
+        background-position: center center;
+        background-size: 120% 110px; /* Set the image dimensions */
+        background-repeat: no-repeat; /* Prevent image repetition */
+    }
+    .g-block {
+        width: 100px;
+        height: 70px; 
+        background-color: #72c685; 
+        margin: 10px; 
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #fff; 
+        transition: border 0.3s; 
+        transition: background-color 0.3s;
+        font-size: large;
+    }
+    .g-block:hover {
+        background-color: #468d56; 
+        border: 2px solid #30623b; 
+    }
+    .utr1 {
+        width: 20px; 
+        height: 100px;
+        background-color: transparent;
+        margin: 10px; 
+        display: flex;
+    }
+    .utr2 {
+        width: 50px; 
+        height: 100px; 
+        background-color: transparent;
+        margin: 10px; 
+        display: flex;
+    }
+    .utr3 {
+        width: 80px; 
+        height: 100px; 
+        background-color: transparent;
+        margin: 10px; 
+        display: flex;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        
+        SECTION 1: GROWTH CURVES
+
+    -->
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 text-center">
+            <br>
+            <h1>General Results</h1>
+            <hr>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+            <h2>Growth curve and cell growth dynamics </h2>
+            <hr>
+            <p>
+                The OD730nm values of both strains (Synechocystis sp. PCC 6803 and Synechococcus sp. PCC 11901) were done at the same time for ten days. No lag phase is observed for either strain, which means the cultures that they were inoculated from were probably not at the right phase. By the OD730mn values that the original cultures had, they were probably at the stationary phase when it is recommended that they are at exponential growth phase for inoculation to generate a growth curve. The logarithmic growth phase is advisable since the cells actively divide and the growth rate is somewhat constant, which makes the increase in cell numbers more consistent and predictable, thus it is easier to observe growth dynamics and quantify growth patterns. Since the cell density from the original culture was too high to inoculate, the lag phase was 'skipped' and the culture started exponential phase directly (graph 1).  
+            </p>
+            <p>
+                The cells were grown at 30ºC, under 300 µmol m/2s, the cells were grown at 180 rpm. (Note: Synechococcus sp. PCC 11901 strain doubling times and growth rate were not found in published literature since this strain is very new in cyanobacterial research. )
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <!-- put here: GROWTH CURVES OF CYANOBACTERIA STRAINS 6803 AND 19901-->
+            <!-- legend below-->
+            <p>
+                Graph 1. Growth curve of Synechocystis sp. PCC 6803 and Synechococcus sp. PCC 11901 strains in BG-11 medium and MAD medium, respectively. A. Graph with growth curves of Synechocystis sp. PCC 6803 and Synechococcus sp. PCC 11901 strains throughout 11 days. The cells were monitored by optical density (OD) measurements at 730 nm as indicated in literaturec. The y-axis represents the optical density readings which serve as an indicator of cell density. The x-axis shows the duration of the experiment in days.  
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+        <table>
+            <tr>
+              <th>Strain</th>
+              <th>Growth Rate (OD<sub>730nm</sub>/Day)</th>
+              <th>Doubling Time (Days)</th>
+            </tr>
+            <tr>
+              <td><i>Synechocystis</i> sp. PCC 6803</td>
+              <td>0.243 ± 0.009</td>
+              <td>2.853 ± 0.112</td>
+            </tr>
+            <tr>
+              <td><i>Synechocystis</i> sp. PCC 19901</td>
+              <td>0.501 ± 0.019</td>
+              <td>1.381 ± 0.044</td>
+            </tr>
+          </table>
+          <p>
+            Table 11. Growth rate and doubling time of <i>Synechocystis</i> sp. PCC 6803 and <i>Synechococcus</i> sp. PCC 11901. Calculations done using equations: Doubling Time (DT) = (t2 - t1) / log2(Off / ODi). Growth Rate (GR) = ln(2) / Doubling Time
+          </p>
+        </div>
+          <div class="col-lg-3"></div>  
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <table>
+                <tr>
+                  <th>Study</th>
+                  <th>Growth Rate (OD<sub>730nm</sub>/Day)</th>
+                  <th>Doubling Time (Days)</th>
+                </tr>
+                <tr>
+                  <td>Cui et al.<a href=""><sup>33<sup><a></td>
+                  <td>0.186 ± 0.006</td>
+                  <td>not published</td>
+                </tr>
+                <tr>
+                  <td>Eungrasamee et al.<a href=""><sup>43<sup><a></td>
+                  <td>0.099 ± 0.010</td>
+                  <td>7.4 ± 0.4</td>
+                </tr>
+                <tr>
+                  <td>Alphen et al.<a href=""><sup>49<sup><a></td>
+                  <td>0.07 ± 0.005</td>
+                  <td>8 hours</td>
+                </tr>
+              </table>
+              
+        </div>
+          <div class="col-lg-3"></div>  
+    </div>
+    <!-- 
+        
+        SECTION 2: MTR
+
+    -->
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 text-center">
+            <br>
+            <h1>MTR Results</h1>
+            <hr>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+
+    </div>
+    <!-- 
+        
+        SECTION 3: HIS-LYS
+
+    -->
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 text-center">
+            <br>
+            <h1>Histidine-Lysine Results</h1>
+            <hr>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+
+    </div>
+    <!-- 
+        
+        SECTION 4: BIOSAFETY
+
+    -->
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 text-center">
+            <br>
+            <h1>Biosafety Results</h1>
+            <hr>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <h2>Completed Level T Constructs:</h2>
+            <hr>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <br>
+            <h2>LvT eYFP constructs:</h2>
+            <hr>
+            <div class="strand">
+                <div class="g-block" style="width: 120px;">pSEVA421 Acceptor</div>
+                <div class="urt1"></div>
+                <div class="g-block">PrnpB</div>
+                <div class="g-block">eYFP</div>
+                <div class="utr3"></div>
+                <div class="g-block">TrrnB</div>
+                <div class="utr3"></div>
+                <div class="g-block" style="width:120px">End-linker 1</div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="strand">
+                <div class="g-block" style="width:120px">pSEVA421 Acceptor</div>
+                <div class="utr1"></div>
+                <div class="g-block">PcopM195-BCD</div>
+                <div class="g-block">eYFP</div>
+                <div class="utr3"></div>
+                <div class="g-block">TrrnB</div>
+                <div class="utr3"></div>
+                <div class="g-block" style="width:120px">End-linker 1</div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <br>
+            <h2>LvT Synechocystis KS constructs:</h2>
+            <hr>
+            <div class="strand">
+                <div class="g-block" style="width:120px">pSEVA421 Acceptor</div>
+                <div class="g-block" style="width:120px">PcopM195-BCD</div>
+                <div class="g-block">NuiA</div>
+                <div class="g-block">TrrnB</div>
+                <div class="g-block">PrnpB</div>
+                <div class="g-block">NucA</div>
+                <div class="g-block">TrrnB</div>
+                <div class="g-block" style="width:120px">End-linker 2</div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="strand">
+                <div class="g-block" style="width:120px">pSEVA421 Acceptor</div>
+                <div class="g-block" style="width:120px">PcopM195-BCD</div>
+                <div class="g-block">NuiA</div>
+                <div class="g-block">TrrnB</div>
+                <div class="g-block">PrbcL1C</div>
+                <div class="g-block">NucA</div>
+                <div class="g-block">TrrnB</div>
+                <div class="g-block " style="width:120px">End-linker 2</div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <br>
+            <h2>LvT E. coli KS construct:</h2>
+            <hr>
+            <div class="strand">
+                <div class="g-block" style="width:120px">pSEVA421 Acceptor</div>
+                <div class="g-block">PzntA</div>
+                <div class="g-block">NuiA</div>
+                <div class="g-block">TrrnB</div>
+                <div class="g-block" style="width:120px">BBa_J23114</div>
+                <div class="g-block">NucA</div>
+                <div class="g-block" style="width:220px">T<sub>ECK120029600</sub>  Terminator</div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-10">
+            <h2>Biosafety Analysis</h2>
+            <hr>
+            <p>
+                Level T eYFP constructs were made in order to characterize PcopM195-BCD zinc-inducible Synechocystis promoter by measuring eYFP fluorescence. Level T Synechocystis KS constructs were supposed to be transformed into Synechocystis to characterize kill switch activity. Level T eYFP and KS constructs were screened by colony PCR. For each construct there were colonies that gave a correct size amplicon (Figures 1 and 2). 
+            </p>
+            <br>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/fig1-biosafety.png">
+            <p><small><b>Figure 1.</b> cPCR of Level T eYFp constructs.</small></p>
+        </div>
+        <div class="col-lg-5 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/fig2-biosafety.png">
+            <p><small><b>Figure 2.</b> cPCR of Level T Synechocystis Kill Switch constructs.</small></p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>  
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <b>Table 1: Expected amplicon sizes:</b>
+            <table>
+                <tr>
+                  <th>Construct</th>
+                  <th>Expected Amplicon Size</th>
+                </tr>
+                <tr>
+                  <td>LvT-PrnpB-eYFP (TY1)</td>
+                  <td>1494 bp</td>
+                </tr>
+                <tr>
+                  <td>LvT-PcopM-eYFP (TY2)</td>
+                  <td>1544 bp</td>
+                </tr>
+                <tr>
+                  <td>LvT-PrnpB-NucA (KS1)</td>
+                  <td>2401 bp</td>
+                </tr>
+                <tr>
+                  <td>LvT-Prbc-NucA (KS2)</td>
+                  <td>2356 bp</td>
+                </tr>
+              </table>
+              <br>
+            </div>
+            <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p>
+                Cultures from colonies that gave the correct cPCR band were set up, plasmids were purified and screened by restriction digestion for correct insertion (Figure 3 and 4). After digestion, while the correct number of bands was observed, they were all slightly larger than expected. Due to time constraints, decided to continue with Synechocystis transformations. Importantly, we later also sent the Level T constructs to Edinburgh Genome Foundry for sequencing by Oxford Nanopore technology and analysis. The sequencing report showed that most reads of the Level T Kill Switch constructs were of the approx. expected size, which suggested that larger than expected size bands observed after restriction digestion were likely an experimental error.
+            </p>
+            <br>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/fig3-biosafety.png" style="width: 75%;">
+            <p><small><b>Figure 3.</b> Restriction digestion of Level T eYFP constructs with BciVI and AvaI enzymes.</small></p>
+        </div>
+        <div class="col-lg-5 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/fig4-biosafety.png" style="width: 70%;">
+            <p><small><b>Figure 4.</b> Restriction digestion of Level T Synechocystis Kill Switch constructs with BciVI and AvaI enzymes.</small></p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <b>Table 2: Expected band sizes following digestion:</b>
+            <table>
+            <tr>
+                <th>LvT Plasmid</th>
+                <th>AvaI Digest (AvaI)</th>
+                <th>BciVI Digest (BciVI)</th>
+            </tr>
+            <tr>
+                <td>LvT-PrnpB-eYFP</td>
+                <td>4857 bp</td>
+                <td>2617 bp and 2240 bp</td>
+            </tr>
+            <tr>
+                <td>LvT-PcopM-eYFP</td>
+                <td>4907 bp</td>
+                <td>2667 bp and 2240 bp</td>
+            </tr>
+            <tr>
+                <td>LvT-PrnpB-NucA</td>
+                <td>5764 bp</td>
+                <td>3524 bp and 2240 bp</td>
+            </tr>
+            <tr>
+                <td>LvT-Prbc-NucA</td>
+                <td>5719 bp</td>
+                <td>3479 bp and 2240 bp</td>
+            </tr>
+            </table>
+            <br>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/fig5-biosafety.png">
+            <p><small><b>Figure 5.</b> Colony PCR of Level T E. coli Kill Switch construct.</small></p>
+        </div>
+        <div class="col-lg-5">
+            <p>
+                We performed the Synechocystis transformation protocol received from ABOA-Turku's iGEM team with some modifications. First, the main Synechocystis sp. PCC 6803 culture used for transformations was a mixture of two cultures that were at OD630=0.8, and not at OD750=0.8 (mid logarithmic growth phase) as suggested in the original protocol. Second, the recommendation was to keep plates at 30°C and 50 µE until slight green film arose (ca. 2-4 days), however, we only had a shaking incubator with a light source at our disposal, so we kept the plates there. Synechocystis transformations failed - there was no green bacterial film on the plates after a week, the plates started drying out and had to be disposed of. Importantly, even if we were able to grow the film of cyanobacteria it would not have been possible for us to select for transformed cells because it requires multiple rounds of addition of antibiotic by increasing its concentration and waiting for colonies to grow, which is a slow process for Synechocystis and can take up to a couple of months, which in the case of iGEM timelines is unfeasible. 
+            </p>
+            <p>
+                Because Synechocystis transformations failed we decided to try and characterise NucA-NuiA kill switch in E. coli. For this purpose, we ordered a G-block encoding the whole Kill Switch cassette with the same NucA and NuiA sequences, but with Synechocystis promoters substituted with corresponding E. coli promoters, zinc-inducible PzntA promoter for antitoxin and constitutive Anderson promoter (BBa_J23114) for toxin. The G-block also contained the required overhangs to allow direct assembly into a LvT acceptor vector. We ran cPCR of level T E. coli KS constructs (Figure 5). Positive control failed because no template DNA was added, but three colonies, 2, 3, and 8, gave the expected amplicon size (1930 bp), so we decided to proceed to Kill Switch characterization with colony 2.
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p>
+                We set up two overnight cultures, one from colony 2 that gave the correct cPCR band size for level T E. coli KS construct, and the other one from a blue colony containing the empty vector (WT+vector). We used these initial cultures to make new cultures in triplicates with or without added 400 µM Zn2+ for both KS and WT+vector control. For KS characterisation, we grew these cultures in a shaking incubator at 37C, 160 rpm, and took OD600 measurements at 1 hour intervals to produce growth curves (Figure 6). From growth curves, cells containing Kill Switch plasmid or empty vector grew better without added zinc, indicating that the addition of 400 μM ZnSO4 slows down cell growth. Importantly, there was no apparent decrease in growth of cells containing the Kill Switch in media without added zinc compared to those grown with added zinc. This could be due to nuclease not being expressed, thus unable to kill the cells. Notably, NucA requires divalent metal ions like Mn2+ or Mg2+ as cofactors, the optimal concentration for these being around 5 mM, while NucA activity was shown to decrease with increasing concentration of monovalent salt. LB media contains a high concentration of NaCl but no divalent salts, meaning that NucA might not function due to lack of cofactors. Alternatively, zinc-inducible promoter might not function as expected, leading to constitutive expression of antitoxin, thus inhibiting nuclease. In future experiments, NucA and NuiA expression should be verified by Western Blotting before characterizing the Kill Switch. Also, LB media should be supplemented with appropriate concentrations of divalent salts to ensure the presence of cofactors for NucA. 
+            </p>
+            <br>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/fig6-biosafety.png" style="width: 90%;">
+            <p><small><b>Figure 6.</b> Growth curves of E. coli TOP10 cells with or without Kill Switch plasmid in media with or without added 400 μM ZnSO4. </small></p>
+        </div>
+        <div class="col-lg-5 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/fig7-biosafety.png" style="width: 90%;">
+            <p><small><b>Figure 7.</b> CFU/mL (log10) values for E. coli TOP10 cells with or without Kill Switch plasmid in media with or without added 400 μM ZnSO4. KS and WT+vector cultures (in triplicates) were grown in media with or without zinc were sampled every 2 hours (for 6 hours total), diluted, and plated onto LB + Spec + 400 µM Zn2+ and LB + Spec (without zinc) plates, respectively.</small></p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p>
+                For checking the viability of cells containing the KS in conditions with and without added zinc compared to WT+vector control we performed colony forming unit (CFU) counting assay (Figure 7). In general, the experiment was unsuccessful since the numbers of colonies observed after plating 10 µL of culture diluted by the factor of 107 were too low to be able to accurately deduce the CFU number in original undiluted samples. Thus, in the future the experiment should be redone by plating lower dilution or higher volume of cells. Moreover, as noted previously, since NucA requires divalent metal ions like Mn2+ or Mg2+ as cofactors, ideally the plates should be supplemented with them. From our results, at 6 hours, no significant difference in CFU/mL numbers was observed between KS-containing cells grown with or without added zinc (2 sample t-test, p-value > 0.5).
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <!-- 
+        
+        SECTION 5: SALINITY 
+
+    -->
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 text-center">
+            <br>
+            <h1>Salinity Results</h1>
+            <hr>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+
+    </div>
+    <!-- 
+        
+        REFERENCES
+
+    -->
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <!-- REFERENCES HERE FOR:
+        1. GROWTH CURVES
+        2. MTR
+        3. HIS-LYS
+        4. BIOSAFETY
+        5. SALINITY/IDEC
+        -->
+        </div>
+        <div class="col-lg-2"></div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
