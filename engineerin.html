@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empty Page with Bootstrap</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="imported_styles.css">
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Context</h2>
+            <p>Throughout the project, the engineering design cycle was utilized in the design of the solar panel.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Biophotovoltaic Cell Alternatives</h2>
+            <p><strong>1. A single-compartment cell with culture fixed as a biofilm at the anode</strong></p>
+            <p><strong>2. A dual-compartment cell with free-flowing (planktonic) culture at the anode compartment.</strong></p>
+            
+            <h2>Biofilm-based System</h2>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Cycle 1: Biophotovoltaic Circuit utilizing Synechococcus sp. PCC 11901 in a biofilm</h2>
+            <p><strong>Design:</strong> First attempt at a one-chamber system, utilizing biofilm formation on the anode.</p>
+            
+            <p><strong>Build:</strong> Despite conducting extensive research on Synechocystis sp. PCC 6803, the model organism most frequently studied in cyanobacterial bioengineering and BPV designs, we initially had only Synechococcus 11901 (WT, eYFP strains) at our disposal.</p>
+            
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p>Since this strain was recently discovered, there is limited data available regarding its characteristics, except for its rapid growth.</p>
+    
+            <p>Our primary focus for this design cycle was to confirm and evaluate the formation of biofilms on the selected materials. Additionally, we aimed to construct an electrolytic cell, drawing inspiration from Bombelli et al, 2022 (DOI: 10.1039/D2EE00233G).</p>
+            
+            <p>To create conductive materials with a high surface area suitable for biofilm colonization, we utilized stainless steel plates, stainless steel plates coated with activated charcoal and PVA as a conductive binding agent, as well as microscope glass slides with the same activated charcoal and PVA paste. (Inspired from Imologie M Simeon et al, 2022 DOI: 10.1016/j.ceja.2022.100246.)</p>
+            
+            <p>Next, we concentrated the eYFP cultures through centrifugation at 3000 rpm for 5 minutes and applied them to the surfaces, allowing them to grow.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <img src="https://static.igem.wiki/teams/4849/wiki/tompic1.png" style="width: 100%;">
+            <small><b>Figure 1</b>: photo of attempt at Synechococcus sp. PCC 11901 eYFP expressing spotted on various surfaces to study biofilm formation capabilities.</small>
+            <br>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p>For testing whether the formed biofilms would yield measurable results, we designed a replication method based on the paper mentioned above.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <img src="https://static.igem.wiki/teams/4849/wiki/tompic2.png" style="width: 100%;">
+            <small><b>Figure 2</b>: Dimensions of BPV-chamber developed by Bombelli et al, 2022 (DOI: 10.1039/D2EE00233G)  , drawn to inspire first printed model seen to the left.</small>
+            <br>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p><strong>Test:</strong> After a 10-day incubation period, the plates were delicately rinsed to eliminate loosely adhered cells. Subsequently, the surfaces were exposed to UV light.</p>
+            
+            <p>Furthermore, before rinsing, we collected samples from the surfaces using a sterile swab to examine any remaining cells under a microscope.</p>
+
+            <p><strong>Learn:</strong> We have found no increased fluorescent for any of the surfaces.</p>
+            
+            <p>While we observed viable dividing cells, there was no significant difference in cell count compared to samples taken from the media on which the surfaces were incubated.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6"> 
+            <img src="https://static.igem.wiki/teams/4849/wiki/tompic3.png" style="width: 100%;">
+            <small><b>Figure 3</b>: photo taken of Synechococcus sp. PCC 11901 eYFP expressing under a microscope.</small>
+            <br>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">            
+            <p>We reached out to the McCormick lab to inquire about the absence of biofilm formation. They informed us that despite their sedimentation capability, they also hadn't observed biofilm formation in the 11901 strain.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Cycle 2A: Biophotovoltaic Circuit utilizing Synechocystis sp. PCC 6803 in a biofilm</h2>
+            <p><strong>Design:</strong> In this cycle, our design approach remained consistent, utilizing a known biofilm-forming strain.</p>
+            
+            <p><strong>Build:</strong> We applied WT 6803 cultures to the surfaces and allowed them to grow, this time incorporating carbon cloth in addition to the previously mentioned surfaces. As we used the WT strain, measuring fluorescence was no longer an option. Instead, we relied on visual observation and microscopic inspection following a gentle rinse. In parallel, we used a glass slide as a control since the literature suggests that its smooth surface is not conducive to 6803 biofilm formation.</p>
+            
+            <p><strong>Test:</strong> Because we used the WT strain, we couldn't measure emitted fluorescence. Instead, we inspected samples taken from the surfaces after a gentle rinse following a 15-day incubation period.</p>
+            
+            <p><strong>Learn:</strong> Our observations revealed few cells and a lack of division, indicating poor growth. Once again, the cell count was not significantly higher compared to the control. We also attempted to measure any current output from the carbon cloth, but this yielded no data beyond noise.</p>
+            
+            <p>Due to the extended growth time of 6803, particularly in biofilm formation, we decided to shift our focus toward planktonic cells.</p>
+    
+            <p>If biofilm-based systems were to be employed in a future design cycle, the usage of curli to induce/improve biofilm formation would be a relevant approach in increasing Synechocystis sp. PCC 6803 biofilm strength and amount, while a Spy-Tag system could be implemented in allowing biofilm formation within a conductive hydrogel.</p>
+    
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Planktonic-based System</h2>
+            <hr>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Cycle 2B: Two-Chamber System with Planktonic-Based Synechocystis sp. PCC 6803 Anodic Chamber</h2>
+            <p><strong>Design:</strong> The transition to a biophotovoltaic panel comprising a media-filled chamber presented new challenges, such as elevated internal resistance and the necessity for a redox complex to transport charge from cells dispersed in the media to the electrode. In this engineering cycle, although we haven't yet developed a bioengineered cyanobacterial strain expressing the electron pump mtrCAB, our goal is to generate current readings from the metabolic activity of cyanobacteria. To achieve this, we've considered new panel designs, drawing inspiration from the research conducted by the McCormick lab in Edinburgh and publications by Paolo Bombelli at Cambridge University.</p>
+            
+            <p><strong>Build:</strong></p>
+            <p>Experimentation with a two-chamber setup connected by a salt bridge: the anode contains various cyanobacteria cultures at different optical densities (ODs), while the cathode contains different solutions. The new design necessitated a revised prototype with a chamber housing the anode and a separate cathode that serves to reoxidize and complete the electric circuit. To connect the two chambers, we initially intended to use a proton-exchange membrane for ion movement, but due to cost considerations, we opted to continue using a salt bridge filled with 1.5% agar saturated with Potassium Chloride to facilitate ion passage.</p>
+
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <img src="https://static.igem.wiki/teams/4849/wiki/tompic4.png" style="width: 100%;">
+            <small><b>Figure 4</b>: Labelled design of 3D model purposed to serve as a testing apparatus for planktonic-based Synechocystis sp. PCC 6803 BPV system.</small>
+            <br>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Test & Learn:</h2>
+            <p>We acquired a sensitive multimeter capable of detecting currents in the microamp range. Additionally, we established a Synechocystis sp. PCC 6803 culture in a CO2-limited environment using 1M KOH as a carbon dioxide sink, aiming to enhance cyanobacterial conductivity. This was inspired by a publication describing the induced expression of nanowires under starvation conditions, which are filamentous, pilli-like shaped conductive wires known to increase electron flow (Thirumurthy Miyuki A. et al, 2020 DOI: 10.3389/fmicb.2020.01344).</p>        
+            <h2>Test:</h2>
+            <p>Conductivity, power output, and resistance measurement: Testing involved inserting a carbon-cloth electrode into two petri dishes, one serving as the anode and the other as the cathode. The anodic dish contained various Synechocystis sp. PCC 6803 growth cultures at different growth phases, as well as the CO2-limited culture and a concentrated culture. The cathode chamber consisted of 2M potassium chloride salt, and a salt bridge connected the two dishes.</p>
+        
+            <h2>Learn:</h2>
+            <p>Testing revealed that all samples exhibited a conductivity value of 1 microamp when compared to the control (fresh growth media in the anodic dish). The recorded voltage was initially 80 millivolts, but it was later discovered that this was due to a potential difference between the two chambers.</p>
+            <p>Despite the outcome being unfavorable, one significant piece of data emerged: the circuit displayed a notable high resistance, approximately 20 kilo-ohms.</p>
+            <p>Recognizing our limitations in the field of bioelectronics, we sought advice from Prof. Jamie Marleen (Link to human practices), who stressed the necessity of an electron mediator. This led to the introduction of the final sub-project within our iGEM narrative - the FAD transporter. It enables the extracellular export of the endogenously expressed redox complex flavin adenine dinucleotide, allowing it to serve as an electron mediator.</p>
+            <p>In order to address the high resistance arising from the inadequately conductive growth medium of the freshwater cyanobacterial Synechocystis 6803, our team embarked on a new project branch with a focus on enhancing salinity tolerance through the engineering of osmolite expression in our cells. This effort aims to reduce resistance and maximize the theoretical voltage achievable from the circuit.</p>
+            <p>It is also worth noting that the lack of current output readings beyond the noise-detection limit may be attributed to the necessity for the growth culture to be in the precise and optimal exponential growth phase.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Cycle 3: Bioengineered Synechocystis sp. PCC 6803 in an Adapted Planktonic-Based Biophotovoltaic Cell System</h2>
+            <p>As we approach the conclusion of the iGEM timeline, all our hardware design and bioengineering efforts will converge to produce the final biophotovoltaic product. In this cycle, we introduced several bioengineering aspects:</p>
+            <ul>
+              <li>Expression of the mtrCAB cassette to facilitate electron transport from the cytoplasm extracellularly.</li>
+              <li>Expression of ggps and stpa to enhance salt tolerance in the growth media, increasing it from the native 0.5% up to 6% and thereby decreasing internal resistance.</li>
+              <li>Expression of the FAD transporter pump to export naturally produced FAD (redox complex) to the extracellular medium and carry the charge from reduction at the proximate site of the mtrCAB pump to the oxidation at the electrode.</li>
+              <li>Implementation of a NucA nuclease - NuiA kill switch as a safety measure to prevent the escape of GMOs from the system once implemented.</li>
+            </ul>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Design:</h2>
+            <p>The requirements for the design aspect remained largely the same, with the addition of incorporating the bioengineering project and the desire to merge both chambers into a compact, singular, and modular product.</p>
+            <p>In preparation for the event of failure in generating current readings, we also decided to employ the ferrocyanide reduction assay. This assay will serve as a means to measure the reduction potential resulting from electrons traveling outside of the cell.</p>
+            <h2>Build:</h2>
+
+    <p>The merger of the anodic and cathodic chambers aims to make the solar cell mobile and compact. This integration also allows for a significant reduction in resistance introduced by the salt bridge. This was achieved through the introduction of a proton-permeable membrane, enhancing the surface area between the two chambers while keeping internal resistance negligible.</p>
+    <p>Modifications were made to the cathode to further decrease resistance and enhance the device's compactness. An open-air cathode was utilized, with exposure to the open air serving as an alternative for reoxidation and circuit completion.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <img src="https://static.igem.wiki/teams/4849/wiki/tompic5.png" style="width: 100%;">
+            <small><b>Figure 5</b>: (Upper) exploded & labelled view of the final 3d model designed for a planktonic, bioengineered Synechocystis sp. PCC 6803-based system. (Lower) view of the anodic chamber destined for the bacterial culture and the inter-panel space destined to contain bacteria-neutralizing detergent in the event of breakage. Credit to Björn Xu for helping to create the exploded view model, as well as providing insight into the physical engineering of the final design prototype.</small>
+            <br>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <b>Test & Learn:</b>
+            <p> Unfortunately, as the project concluded, we were unable to test the hardware with the bioengineered components.</p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!-- This is an empty page with boostrap infrastructure DO NOT WRITE IN THIS -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empty Page with Bootstrap</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="imported_styles.css">
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <br>
+            <h1 class="text-center">Notebook</h1>
+            <hr>
+            <h3>Weeks 1 to 5 (1<sup>st</sup> May to 4<sup>th</sup> June):</h3>
+
+            <p><strong>Conductivity:</strong> We started reading on MtrCAB and Cytochrome A (CymA) gene from Shewanella Oneidensis MR-1. Read on tests to quantify conductivity, settled on a ferrocyanide test. We made BG11 growth medium for Synechocystis sp. PCC 6803. Selected genes NC_004347.2 from NCBI (citation needed from NCBI). Designed primers. We began in-silico extraction (in silico primers) and assembly of the individual Mtr genes and the CymA gene in Benchling. We received the genome of Shewanella Oneidensis MR-1 (courtesy of Horsfall lab). We started extraction MTR genes; MtrA, MtrB, MtrC and CymA via PCR extraction, however this failed. Due to the failed PCR result for MTR, we switched from Q5 to Superfly polymerase, which also failed, confirmed via gel electrophoresis. Moreover, we received the cyanogate parts from the McCormick lab. The parts were given in E. coli. The E. coli was allowed to grow overnight followed by purification of the parts using Qiugen miniprep. We also ordered universal cyanogate parts for level 0 and 1 assembly (cite table 2 from notes).</p>
+            <hr>
+            <h3>Week 6 (5<sup>th</sup> June to 11<sup>th</sup> June):</h3>
+
+            <p><strong>Conductivity:</strong> We continued PCR extraction for MTR, however with OneTaq polymerase (NEB). The gel run showed successful results (refer results).</p>
+
+            <p><strong>Carbon Sink:</strong> We began to brainstorm how to integrate a carbon sink into our system. Decided to use PHA operon originally found in Synechocystis sp. PCC 6803. We began in-silico extraction and assembly of the PHA operon in CyanoGate vectors.</p>
+
+            <p><strong>Hardware:</strong> Reading and development of 3-D design.</p>
+
+            <p><strong>Biosafety:</strong> Brainstorming and reading.</p>
+            <hr>
+            <h3>Week 7 (12<sup>th</sup> June to 18<sup>th</sup> June):</h3>
+
+            <p><strong>Conductivity:</strong> The PCR product was cleaned using Wizard SV GEL and PCR Cleanup (Promega). The Cyanogate protocol was employed for assembly of level 0 constructs and transformation of said constructs into cells. While some white colonies appeared, screening via colony PCR revealed that the plasmids were not the correct size, likely as a result of them closing prematurely.</p>
+
+            <p><strong>Carbon Sink:</strong> We made multiple attempts to extract the PHA operon using Q5 polymerase from the PCC 6803 genome via PCR. The attempt failed.</p>
+
+            <p><strong>Hardware:</strong> We set up CO2 limited growth for Synechococcus 11901 using KOH 1M solution to locally reduce CO2 levels.</p>
+
+            <p><strong>Biosafety:</strong> Brainstorming and reading.</p>
+            <hr>
+            <h3>Week 8 (19<sup>th</sup> June to 25<sup>th</sup> June):</h3>
+
+            <p><strong>Conductivity:</strong> Enzymes were switched to troubleshoot level 0 assembly, going from Bpi (ThermoFisher) BsaI (NEB). The bands were still the incorrect size. Troubleshooting continued by simplifying the protocol with only vector, PCR product, water, DNA ligase, BsaI and T4 DNA ligase. This yielded the expected band sizes. Furthermore, we began the extraction of MTR operons (MTR CAB, CA and AB) using Q5 polymerase. As Q5 did not work, so we switched back to OneTaq, which worked for MTR CA and AB, but not CAB. This was determined to be due to the elongation time being 2 minutes.</p>
+            
+            <p><strong>Carbon Sink:</strong> We continued the PHA operon extraction.</p>
+            
+            <p><strong>Hardware:</strong> Preparation of Salt bridge using NaCl, crude measurements with Potentiostat testing various cyanobacterial culture & electrolytes concentrations.</p>
+            
+            <p><strong>Salinity resistance:</strong> We started brainstorming ways of improving the conductivity of our solar cell after hardware tests.</p>
+            
+            <p><strong>Biosafety:</strong> In-silico design and assembly of the NucA-NuiA toxin-antitoxin system.</p>
+            <hr>            
+            <h3>Week 9 (26<sup>th</sup> June to 2<sup>nd</sup> July):</h3>
+            
+            <p><strong>Conductivity:</strong> Level 0 vectors were inoculated with promoters and terminators, and then purified using a Monarch MiniPrep kit (NEB). Purified vectors were confirmed to be the correct size by digestion with BsaI and PvuI. The MTR CA and AB samples were cleaned using Wizard SV GEL and PCR Cleanup. These 2 samples were PCR-ed with longer primers to introduce overhangs for level 0 assembly. Incorrect band sizes appeared on gels. Simultaneously, extraction of MTR CAB continued, this time with an elongation time of 6 minutes (previously 2 minutes). Extraction was successful (see results). Cleanup of all 3 samples was attempted, yielding correct band sizes. Another attempt at PCR with overhang primers was made, switching back to Q5 polymerase. Herein, 3 reactions with the Q5 polymerase PCR reaction were set up at different annealing temperatures for troubleshooting. Results showed correct band sizes.</p>
+            
+            <p><strong>Carbon Sink:</strong> We continued to do the PCR extraction of PHA. This was successful.</p>
+            
+            <p><strong>Artificial Pollen:</strong> We started brainstorming for Artificial pollen integrating our human practices. We decided to try and induce increased production of specific amino acids (Histidine and lysine) for increased nutritional content of the cyanobacteria.</p>
+            
+            <p><strong>Salinity resistance:</strong> Due to our meeting with Professor Jamie Marland, we decided to improve conductivity by increasing salt (NaCl) concentration. Further brainstorming led to the idea of improving the salt tolerance of synechocystis through directed evolution.</p>
+            
+            <p><strong>Biosafety:</strong> We checked the effect of varying Zn2+ ion concentration in the 0-16 micromolar range in the medium on the growth of Synechocystis sp. PCC 6803 in order to determine the optimal inducer concentration that could be used in the solar panel for antitoxin induction without large negative effects on growth. Additionally, the level 0 parts ordered from Prof. McCormick’s lab arrived.</p>
+            
+            <p><strong>Hardware:</strong> We continued to make the growth curve for Synechocystis sp. PCC 6803.</p>
+
+            <hr>
+            <h3>Week 10 (3<sup>rd</sup> July to 9<sup>th</sup> July):</h3>
+
+            <p><strong>Conductivity:</strong> MTR assembly continued onto level 1 with Cyanogate protocol with adaptations applied from the simplified level 0 assembly (See week 8). We performed a gel extraction of G-blocks for later use in the cyanogate protocol. Confirmation by gel electrophoresis showed expected band sizes. We assembled level 0 plasmids for MTR CA, AB, and CAB and then transformed them into competent TOP10 cells. Cells were screened on spectinomycin plates and left overnight. Screening successfully returned blue colonies for controls and white colonies for experimental. We performed colony PCR using the Green Go-Taq protocol, returning correctly sized bands for CA, AB, and CAB level 0 plasmids. The cultures that yielded correct bands were left in colony PCR overnight.</p>
+
+            <p><strong>Artificial Pollen:</strong> We selected genes for his-lys expression, settling on hisG for histidine (with hik8 as a backup) and dapA and lysC for lysine. We investigated qualitative tests for histidine-lysine (his-lys) and chose mass-spec analysis in the University of Edinburgh’s Waddington Laboratories. We started the assembly of his-lys genes in silico, ordering primers and preparation of E. coli MG1655 cells for genome extraction.</p>
+
+            <p><strong>Directed Evolution:</strong> Fully saturated NaCl solutions were prepared and preliminary growth curves with E. coli K12 were taken for our salinity subproject. The results were unexpected, as literature suggested that colonies wouldn’t tolerate salt concentrations higher than 1.5%, but plates saw growth in concentrations as high as 5%. Investigation using light microscopy showed that concentrations above 3% had lysed most colonies after they expanded.</p>
+
+            <p><strong>Carbon Sink:</strong> We assembled and transformed the PHA operon into level 0 acceptor vector plasmids. The transformation returned a few white colonies which were checked via colony PCR screening, showing potential positive result. Following, diagnostic digestions were performed. These digestions showed the requirement for domestication. Therefore, we started designing the domestication primers.</p>
+
+            <p><strong>Hardware:</strong> Discovered Synechococcus 11901 does not form a biofilm, switched to 6803 for the same. Set up was made for 11901. We tried to induce biofilm formation on different surfaces including Metal, Glass, Activated Charcoal. However, through microscopic analysis, we determined the cells did not adhere to any surface measured via eYFP observation.</p>
+
+            <hr>
+            <h3>Week 11 (10<sup>th</sup> July to 16<sup>th</sup> July):</h3>
+
+            <p><strong>Conductivity:</strong> We miniprepped MTR CA, AB, CAB, and B, all coming back with correct band sizes in gel runs. Digestion of the plasmids also showed correct sizes of G-blocks (our lab lead couldn’t emphasize how perfect the results were). This confirmed that we’d need to domesticate MTR C in blocks CAB and CA.</p>
+
+            <p><strong>Artificial Pollen:</strong> We extracted target his-lys genes (hisG, lysC, and dapA) from the genomic DNA of E. coli MG1655 via PCR extraction. Gel run showed expected band sizes (results).</p>
+
+            <p><strong>Biosafety:</strong> Level 0 assembly was performed using BbsI restriction enzyme of G-blocks, including constitutive Synechocystis promoter PrbcL1C, zinc-inducible promoter PcopM, NucA nuclease toxin, and NuiA antitoxin, for the zinc-inducible toxin-antitoxin Kill Switch (KS) system. Competent E. coli TOP10 cells were transformed and plated on IPTG, Xgal, and Spectinomycin containing plates for screening.</p>
+
+            <p><strong>Carbon Sink:</strong> Moreover, we continued to assemble and transform the PHA genes into level 0 acceptor plasmids. However, the absence of white colonies demonstrated failure. Nonetheless, some of the blue colonies were colony PCR-ed to double-check the colonies. The blue colonies did not have the gene of Interest.</p>
+
+            <p><strong>Directed Evolution:</strong> We designed ggpS and ggpP primers for extraction from the PCC 6803 genome for salinity resistance.</p>
+
+            <hr>
+            <h3>Week 12 (17<sup>th</sup> July to 23<sup>rd</sup> July):</h3>
+
+            <p><strong>Conductivity:</strong> We assembled MTR AB in level 1 plasmids using the cyanogate protocol and inoculated them into cells via transformation and colony PCR. Gel runs showed incorrect bands. We subsequently domesticated PCR for MTR the required blocks (CAB/CA). Domestication PCR was successful.</p>
+
+            <p><strong>Artificial Pollen:</strong> The amplified and gel-extracted his-lys genes were purified, and so we began level 0 and 1 plasmid construction in silico. We transformed the level 0 plasmids at the end of the week into TOP10 E. coli cells. The his/lys cultures were plated and left to grow. 3 White colonies from lv0 his-lys transformations were selected for colony PCR. No bands appeared for the positive control or the other colonies. Therefore, we troubleshooted the colony PCR by lowering primer concentration and increasing annealing temperature, with hopes of mitigating primer dimer formation. Nevertheless, the colony PCR did not work.</p>
+
+            <p><strong>Biosafety:</strong> Five transformed white colonies were selected for colony PCR screening of each Level 0 KS construct, and overnight cultures of colonies giving correct cPCR bands were set up. Plasmids were subsequently purified from these cultures using a QIAprep Spin Miniprep Kit (Qiagen) and digested using Bsal and Pvul enzymes to confirm correct insertion. Digestion and gels showed that the level 0 constructs contained correct insertions of the expected size. We assembled level 1 constructs containing eYFP under the control of the constitutive promoter PrnpB and zinc-inducible PcopM promoter for further testing and characterization of the zinc promoter by measuring eYFP fluorescence. We also made growth media with smaller variations in Zn2+ concentration based on the previous growth curve.</p>
+
+            <p><strong>Hardware:</strong> Assembly of DC-DC current amplification circuit, worked on 3D print design.</p>
+
+            <p><strong>Carbon Sink:</strong> The level 0 PHA assembly and transformation were redone, which successfully returned white colonies. At the same time, we performed Nile Red staining of 6803 and 11901 followed by light microscopy for our controls and learning the technique. Staining was successful for only 6803 (Refer results).</p>
+
+            <p><strong>Directed Evolution:</strong> We extracted ggpS and ggpP by PCR. While extraction and purification from gel was successful, concentrations were too low for us to transform cells into level 0.</p>
+
+            <hr>
+            <h3>Week 13 (24<sup>th</sup> July to 30<sup>th</sup> July):</h3>
+
+            <p><strong>Conductivity:</strong> Due to multiple bands of the domestication process producing smears (insert reference), we proceeded with gel extraction (instead of PCR cleanup). A domestication cycle was done for the PCR product CAB and CA in the thermocycler. The domestication was checked via diagnostic digestion showing failed domestications. Moreover, the continuing forward with Lv1 AB, cPCR for performed, however, this did not work.</p>
+
+            <p><strong>Artificial Pollen:</strong> Further troubleshooting was performed for his-lys genes level 0 transformations colony PCR. We adjusted the assembly and thermocycling procedures by replacing ATP volumes with water, as it may have been inhibiting T4 DNA ligase. We changed from NEB T4 DNA ligase to NEB High Fidelity T4 DNA ligase. Of the 108 colonies transformed among the 3 genes, colony PCR followed by gel electrophoresis showed no bands.</p>
+
+            <p><strong>Biosafety:</strong> The growth of Synechocystis in media with varying Zn2+ concentrations, 0 μM, 4 μM, 5 μM, 6 μM, 7 μM, 8 μM, was checked, and from the growth curves, it was decided to use 7 μM Zn2+ for KS induction. We also screened level 1 eYFP constructs from the previous week by cPCR. All screened colonies gave bands of expected size, so overnight cultures were set up. Plasmids were subsequently purified from these cultures using a QIAprep Spin Miniprep Kit (Qiagen) and digested using BbsI and NotI enzymes to confirm correct insertion. Digestion and gels showed that the level 1 eYFP constructs contained correct insertions of the expected size. We immediately began the level T assembly of eYFP constructs using BbsI enzyme, transformed TOP10 cells with these assemblies (same protocol as before), and plated transformed cells on LB plates containing IPTG, Xgal, and Spectinomycin for screening.</p>
+
+            <p><strong>Directed Evolution:</strong> We repeated our extraction of ggpS and ggpP, but ran into issues during the PCR stage as the thermocycler failed. We repeated the experiment after troubleshooting with the PCR machines and purified a high enough concentration to move forward. We performed level 0 transformation and plated TOP10 cultures with ggpS and ggpP cultures. Only ggpS returned white colonies; we performed colony PCR with those cultures and made stock of these cultures.</p>
+
+            <p><strong>Carbon Sink:</strong> We ran colony PCR on the successfully transformed level 0 PHA colonies. Gel run showed incorrect band sizes. Decided to drop the sub-project.</p>
+
+            <p><strong>Hardware:</strong> 6803 Growth curve and finalized the first iteration of the 3D print design.</p>
+
+            <hr>
+            <h3>Week 14 (31<sup>st</sup> July to 6<sup>th</sup> August)</h3>
+
+            <p><strong>Conductivity:</strong> In response to the failed AB level 1 plasmids, we used miniprep for 5 samples, and checked all 5 using BbsI and NotI digestions. After choosing the AB digestion with the best band sizes, we did One-Taq PCR to check, yielding correct bands in subsequent gel runs. We performed another domestication of CAB and CA in two separate water baths instead of a thermocycler. Unfortunately, this also failed, verified via digestions. Additionally, we performed digestions of domesticated MtrC plasmids, but this failed, with gel plates showing excision of our gene somewhere in the process (most likely an anomaly). Lastly, we obtained ferricyanide (courtesy of Jamie Marland) followed by initial experiments.</p>
+
+            <p><strong>Artificial Pollen:</strong> We continued with troubleshooting for his-lys genes level 0 colony PCR. We increased the insert-to-vector ratio twice, once to 6:1, another time to 10:1. There were still no bands.</p>
+
+            <p><strong>Biosafety:</strong> Level 1 KS constructs were screened by cPCR and restriction digestion. Results showed correct insertions of the expected size. Level T KS constructs were assembled and transformed into TOP10 cells, which were plated on LB agar plates containing IPTG, Xgal, and Spectinomycin for screening.</p>
+
+            <p><strong>Directed Evolution:</strong> We repeated ggpP level 0 assembly; however, it remained unsuccessful. Frozen ggpS samples were put into PCR and run on gels to confirm correct plasmid size. 5 of the 8 white colonies produced the correct bands.</p>
+
+            <hr>
+            <h3>Week 15 (7<sup>th</sup> August to 13<sup>th</sup> August)</h3>
+
+            <p><strong>INTERLAB:</strong> Calibration step for Interlab Study using fluorescent standards and Plate Reader. The IGEM interlab parts failed to grow, and hence interlab was scrapped.</p>
+
+            <p><strong>Conductivity:</strong> This week we began Ferrocyanide testing on wild type Synechocystis sp. PCC 6803. Moreover, We attempted to move from level 0 assembly of Mtr A, B, and CymA to Level 1. The successful level 1 plasmids were put into colonies and overnight cultures. We ran digestions to confirm, which returned smeared but correct bands. We also attempted to move from level 1 AB plasmids to level T, but this failed.</p>
+
+            <p><strong>Artificial Pollen:</strong> We troubleshooted lysC colony PCR for Level 0 transformation. The cPCR screening was unsuccessful. Nevertheless, the positive colonies for hisG and dapA were cultured and subsequently minipreped.</p>
+
+            <p><strong>Biosafety:</strong> We screened Level T eYFP and KS constructs by cPCR, but it failed due to the wrong primers ordered previously. We ordered new level T primers for cPCR.</p>
+
+            <p><strong>Directed Evolution:</strong> We repeated with level 0 transformations of stpA two more times, once with 2x level 0 vector concentration, and then again with 5x level 0 vector concentration. Both transformations were unsuccessful.</p>
+
+            <hr>
+            <h3>Week 16 (14<sup>th</sup> August to 20<sup>th</sup> August):</h3>
+
+            <p><strong>Conductivity:</strong> We continued the domestication of MtrCAB and MtrCA, and performed digestions for level 1 A, B, and CymA plasmids, but the results were inconclusive due to abnormal band sizes.</p>
+
+            <p><strong>Artificial Pollen:</strong> Level 0 restriction digestions were performed to verify assembly for hisG and dapA. The band sizes followed the expected sizes from the digestion in silico, validating the cloning from Level 0 and the constructs could then be progressed to Level 1. We performed Level 1 assembly and transformation of hisG and dapA and then did colony PCR on white colonies. Following, the positive colonies were cultured and miniprepped.</p>
+
+            <p><strong>Biosafety:</strong> The newly ordered level T cPCR primers were used to screen level T eYFP and KS constructs. For each construct, there were colonies that gave a correct size amplicon. Cultures from these colonies were set up, plasmids were purified, and screened by restriction digestion for correct insertion. After digestion, while the correct number of bands was observed, they were all slightly larger than expected. Due to time constraints, we were only able to note this down and continue with protocols. Larger cultures of level T eYFP and KS constructs were set up to get enough plasmid DNA for Synechocystis transformations. We performed the transformation protocol received from ABOA-Turku’s iGEM team with some modifications. Synechocystis transformations failed - there was no green bacterial film on the plates after a week, the plates started drying out and had to be disposed of.</p>
+
+            <p><strong>Directed Evolution:</strong> We began growing native PCC 6803 cultures at salt concentrations (0.25%-13% by volume) for a standard curve of our salinity project. Additionally, we miniprepped terminator sequences (pC0.082) for level 1 ggpS assembly. Promoter (ptrc10) miniprep was unsuccessful, as our cultures had been incubated in the incorrect antibiotic during the overnight culture. We attempted level 1 reactions anyway, using a lower ptrc10 concentration. We incubated more ptrc10 colonies in overnight culture, this time with the correct antibiotics.</p>
+
+            <p><strong>Riboflavin:</strong> Lit review & Primer design for Riboflavin transporter & ordered cassette - failed to synthesize.</p>
+
+            <hr>
+            <h3>Week 17 (21<sup>st</sup> August to 27<sup>th</sup> August):</h3>
+
+            <p><strong>Conductivity:</strong> Level T reactions were performed to move level 1 A, B, and AB into level T. These were then transformed, and white colonies were picked for colony PCR; however, these indicated unsuccessful assembly and transformation. We continued to domesticate MtrCAB and MtrCA.</p>
+
+            <p><strong>Artificial Pollen:</strong> We digested the Level 1 miniprepped plasmid DNA using BsaI, BbsI, BpiI, and NotI. Failed to get bands. Reperformed digestion of Level 1 miniprep.</p>
+
+            <p><strong>Biosafety:</strong> Sent plasmid samples to the Edinburgh Genome Foundry (EGF) for Oxford Nanopore sequencing and analysis.</p>
+
+            <p><strong>Directed Evolution:</strong> Our low ptrc10 concentration reaction showed poor growth, with a single colony showing some growth. PCR showed no level 1 constructs present. The new ptrc10 colonies were ready to be used, so we attempted again using a higher concentration of ptrc10. The level 1 reaction was still unsuccessful as indicated by colony PCR and gel runs.</p>
+
+            <hr>
+            <h3>Week 18 (28<sup>th</sup> August to 3<sup>rd</sup> September):</h3>
+
+            <p><strong>Biosafety:</strong> Since Synechocystis transformations failed, we decided to try and characterize the NucA-NuiA kill switch in E. coli. For this purpose, we ordered a G-block encoding the whole Kill Switch cassette with the same NucA and NuiA sequences but with Synechocystis promoters substituted with corresponding E. coli promoters, zinc-inducible PzntA promoter for antitoxin and constitutive Anderson promoter (BBa_J23114) for toxin. The G-block also contained the required overhangs to allow direct assembly into a LvT acceptor vector. Level T assembly of E. coli KS was performed using a standard protocol, TOP10 cells were transformed and plated onto LB agar plates containing IPTG, Xgal, and Spectinomycin with or without added 400 µM ZnSO4. Transformations worked - plating of non-resuspended cells transformed with a KS gave 10 white colonies on each plate, with and without zinc. However, when cells were resuspended and plated again, the plate without added zinc had no colonies at all, while the plate with zinc had 268 white colonies and 35 blue ones (as expected since antitoxin under a zinc-inducible promoter should not be expressed, and the toxin should kill the cells).</p>
+
+            <p><strong>Artificial Pollen:</strong> Performed Level T reactions for hisG and dapA to have cell strains expressing both genes. Following, we did plasmid miniprep and digestion using Bci, Ava, bbs, NotC.</p>
+
+            <p><strong>Directed Evolution:</strong> In response to our failed level 1 ggpS reactions, we miniprepped new level 0 constructs. We performed transformations for PCR using the new level 0 plasmids. This was successful, confirmed by PCR and gel runs. Digested and undigested samples showed correct band sizes. We ligated ggpP inserts from TWIST directly into pSEVA level T acceptor vectors and transformed them into TOP10 cells. This was successful, so we ran colony PCR and froze samples over the weekend.</p>
+
+            <hr>
+            <h3>Week 19 (4<sup>th</sup> September to 10<sup>th</sup> September):</h3>
+
+            <p><strong>Conductivity:</strong> Decided to switch from Cyano.</p>
+
+            <p><strong>Artificial Pollen:</strong> Ninhydrin Test, first attempt using LacZ Level 1 plasmid control, HisG, and dapA level 1, and amino acid 2% stock solution. A darker purple color corresponds to higher levels of amino acids. Used a water bath at 80°C. Comparison of level 1 plasmid control vector to dapA. Level 1 insert which had a much darker color, suggesting a qualitative increase in amino acid production. Quantitative comparison was obtained by OD570 of samples using a spectrophotometer with the ninhydrin and sodium acetate.</p>
+
+            <p><strong>Directed Evolution:</strong> We attempted error-prone PCR (epPCR) of ggpS using level 1 constructs and newly designed primers. We made multiple attempts with rounds of troubleshooting, but all were unsuccessful.</p>
+
+            <hr>
+            <h3>Week 20 (11<sup>th</sup> September to 17<sup>th</sup> September):</h3>
+
+            <p><strong>Conductivity:</strong> We successfully domesticated CAB and CA plasmids this week. Brainstorming on E. coli transformation and characterization.</p>
+
+            <p><strong>Artificial Pollen:</strong> Repeated the ninhydrin test with initial OD600 of cultures and standardization of population densities. Also, the concentration of ninhydrin in the buffer solution was reduced by 10 fold to allow for more sensitivity in recording results. Used a hot plate for more accurate temperature reading and it was set to 95°C. Also did an additional set with a 3 fold dilution of cultures & prepped samples to be sent for M/Z spec.</p>
+
+            <p><strong>Directed Evolution:</strong> The salinity experiments continued with troubleshooting for ggpS epPCR reaction with no success.</p>
+
+            <hr>
+            <h3>Week 21 (18<sup>th</sup> September to 24<sup>th</sup> September):</h3>
+
+            <p><strong>Conductivity:</strong> Revival of Edinburgh's 2012 iGEM ccmA-H genes in E. coli.</p>
+
+            <p><strong>Artificial Pollen:</strong> Grew overnight cultures of level 1 plasmid control, hisG, and dapA level 1 strains. Pelleted and froze samples in stationary phase with similar OD600s. Handed samples off to Waddington for mass spec analysis. Set up some petri dishes with cyanobacteria cultures to dry out, at room temperature and 37°C, and on metal.</p>
+
+            <p><strong>Biosafety:</strong> We ran cPCR of level T E. coli KS constructs. Positive control failed because no template DNA was added, but three colonies gave the expected amplicon size, so we decided to proceed with one of these.</p>
+
+            <p><strong>Directed Evolution:</strong> We attempted PCR of ggpS using q5 polymerase, and we performed level 0 and 1 assembly again using new primers with a slightly different annealing region and overhangs. Results showed that the primers worked with all templates but the level 1, indicating there was something wrong with the pICH47732 backbone.</p>
+
+            <hr>
+            <h3>Week 22 (25<sup>th</sup> September to 1<sup>st</sup> October):</h3>
+
+            <p><strong>Conductivity:</strong> Co-transformation of ccm plasmid with lv1 A, Lv1 B, and Lv1 AB into E. coli. Growth was observed in LB medium with Kanamycin and ampicillin resistance, suggesting co-transformation.</p>
+
+            <p><strong>Biosafety:</strong> We set up two overnight cultures, one from one of the colonies that gave the correct cPCR band size for level T E. coli KS construct, and the other one from a blue colony containing the vector (WT+vector). We used these initial cultures to make new cultures in triplicates with or without added 400 µM Zn2+ for both KS and WT+vector control. For KS characterization, we grew these cultures in a shaking incubator at 37°C, 160 rpm, and took OD600 measurements at 1-hour intervals to produce growth curves. For checking the viability of cells containing the KS in conditions with and without added zinc compared to WT+vector control, we performed a colony forming unit (CFU) counting assay. KS and WT+vector cultures (in triplicates) were grown in media with or without zinc were sampled every 2 hours (for 6 hours total), diluted, and plated onto LB + Spec + 400 µM Zn2+ and LB + Spec (without zinc) plates, respectively. The next day, colonies on each plate were counted, and CFU/mL values were calculated.</p>
+
+            <p><strong>Directed Evolution:</strong> Error-prone PCR was performed using the new primers with overhangs compatible with the JUMP PJ23100 Promoter and L3SAP51 terminator to transfer from the cyanogate system to the JUMP system to circumvent potential issues with the cyanogate parts. This error-prone PCR was successful. The parts were then digested and gel-purified. However, the concentration of the purified parts was low.</p>
+
+            <hr>
+            <h3>Week 23 (2<sup>nd</sup> to 9<sup>th</sup> October):</h3>
+
+            <p><strong>Conductivity:</strong> Miniprep of the overnight E. coli cultures with mtr & ccm co-transformations. Restriction digestion analysis of plasmids for confirmation of plasmids.</p>
+
+            <p><strong>Directed Evolution:</strong> Error-prone PCR was performed again successfully, followed by digestion and PCR cleanup. This digested error-prone PCR library was then ligated in an assembly reaction into the JUMP pJUMP29-1A acceptor vector with PJ23100 Promoter, L3SAP51 terminator, and pET Ribosome Binding Site. This was then transformed into TOP10 cells, and colonies that fluoresced green under UV light were picked for colony PCR, which indicated successful transformation.</p>
+
+            <p>TOP10 cells that had been transformed with stpA in level T were then made chemically competent for heat shock transformation using the CaCl2 method. These competent cells and the JUMP assembly reaction product were handed to the Edinburgh Genome Foundry to perform a high throughput assay and sequencing for analysis of beneficial mutations.</p>
+
+                                    
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -63,6 +63,10 @@
         margin: 10px; 
         display: flex;
     }
+    .pdf-container {
+      width: 100%;
+      height: 1000px;
+    }
     </style>
 </head>
 <body>
@@ -93,11 +97,8 @@
             </p>
         </div>
         <div class="col-lg-4">
-            <!-- put here: GROWTH CURVES OF CYANOBACTERIA STRAINS 6803 AND 19901-->
-            <!-- legend below-->
-            <p>
-                Graph 1. Growth curve of Synechocystis sp. PCC 6803 and Synechococcus sp. PCC 11901 strains in BG-11 medium and MAD medium, respectively. A. Graph with growth curves of Synechocystis sp. PCC 6803 and Synechococcus sp. PCC 11901 strains throughout 11 days. The cells were monitored by optical density (OD) measurements at 730 nm as indicated in literaturec. The y-axis represents the optical density readings which serve as an indicator of cell density. The x-axis shows the duration of the experiment in days.  
-            </p>
+            <img src="https://static.igem.wiki/teams/4849/wiki/growth-curve.png" style="width: 100%;">
+            <p><small><strong>Graph 1 Growth curve of Synechocystis sp. PCC 6803 in BG-11 medium</strong>: The cells were monitored by optical density (OD) measurements at 730 nm. The y-axis represents the optical density readings which serve as an indicator of cell density. The x-axis shows the duration of the experiment in days.</small></p>
         </div>
         <div class="col-lg-1"></div>
     </div>
@@ -171,8 +172,511 @@
         <div class="col-lg-1"></div>
     </div>
     <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Gene extraction</h2>
+            <p>
+                The MTR target genes: MtrA, MtrB, MtrC and CymA, were extracted and amplified from the genome of Shewanella Oneidensis MR-1 using OneTaq (NEB) polymerase. The PCR primers were designed to introduce CyanoGate overhangs in the extracted operons allowing their integration into Lv0 acceptor plasmid vectors. The MTR operons: MtrCAB, MtrCA and MtrAB, were extracted via PCR extraction (One-Taq polymerase) but with primers that did not introduce overhangs. A second PCR (Q5 polymerase) was then performed on the initial PCR product with overhang primers to produce MtrCAB, MtrCA and MtrAB g-blocks (gene with overhangs). All extracted genes and operons were analysed using agarose gel electrophoresis to determine the presence and size of the fragments. Appropriate negative controls were used for all gel electrophoresis runs (negative control was water). 
+            </p>
+            <p>
+                The PCR extraction was successful, seen in figure 1 and 2, but only after troubleshooting (which involved using different enzymes, different annealing temperatures; and different extension times). The annealing temperature was determined used NEB Tm calculator. While One-Taq polymerase worked on the first try, Q5 and Platinum SuperFi II DNA Polymerase were preferred due to their very high fidelity. Finally, the bands from the gel were extracted, cleaned and taken forward into level 0 Cyanogate acceptor plasmid vector. All the extracted genes have been uploaded onto the IGEM registry.
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <b>Working Conditions for Q5 polymrase:</b>
+                <table>
+                    <tr>
+                      <th>Gene/Operon</th>
+                      <th>Annealing Temperature</th>
+                      <th>Extension Time</th>
+                    </tr>
+                    <tr>
+                      <td>CAB</td>
+                      <td>68°C and 64°C</td>
+                      <td>3 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>CA</td>
+                      <td>71°C, 68°C, and 64°C</td>
+                      <td>1.5 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>AB</td>
+                      <td>71°C, 68°C, and 64°C</td>
+                      <td>1.5 minutes</td>
+                    </tr>
+                </table>
+                  
 
-    </div>
+                <p>*64°C not preferable due to noise</p>
+
+                <b>Working Conditions for One-Taq polymerase:</b>
+                <table>
+                    <tr>
+                      <th>Gene/Operon</th>
+                      <th>Annealing Temperature</th>
+                      <th>Extension Time</th>
+                    </tr>
+                    <tr>
+                      <td>CAB</td>
+                      <td>50°C</td>
+                      <td>6 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>CA</td>
+                      <td>50°C</td>
+                      <td>3 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>AB</td>
+                      <td>50°C</td>
+                      <td>3 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>50°C</td>
+                      <td>5 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>50°C</td>
+                      <td>5 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>50°C</td>
+                      <td>5 minutes</td>
+                    </tr>
+                    <tr>
+                      <td>CymA</td>
+                      <td>55°C</td>
+                      <td>5 minutes</td>
+                    </tr>
+                </table>                  
+            
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr1.png" style="width: 100%;">
+                <p><small><strong>Figure 1</strong>: PCR with OneTaq of MtrA, MtrB, MtrC and CymA. A. 1 Kb DNA ladder diagram (New England Biolabs). The ladder is not to scale and it is provided for reference purposes only.</small></p>
+                <br>
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr2.png" style="width: 100%;">
+                <p><small><strong>Figure 2</strong>: PCR with Q5 polymerase to introduce overhangs in extracted operons; MtrCAB, MtrAB, MtrCA.</small></p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <table>
+                    <tr>
+                      <th>MTR Genes/Operons</th>
+                      <th>Link to Parts Repository</th>
+                    </tr>
+                    <tr>
+                      <td>MtrA</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849016">http://parts.igem.org/Part:BBa_K4849016</a></td>
+                    </tr>
+                    <tr>
+                      <td>MtrB</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849014">http://parts.igem.org/Part:BBa_K4849014</a></td>
+                    </tr>
+                    <tr>
+                      <td>MtrC</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849025">http://parts.igem.org/Part:BBa_K4849025</a></td>
+                    </tr>
+                    <tr>
+                      <td>MtrCAB</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849027">http://parts.igem.org/Part:BBa_K4849027</a></td>
+                    </tr>
+                    <tr>
+                      <td>MtrCA</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849028">http://parts.igem.org/Part:BBa_K4849028</a></td>
+                    </tr>
+                    <tr>
+                      <td>MtrAB</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849030">http://parts.igem.org/Part:BBa_K4849030</a></td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>Cym Gene</th>
+                      <th>Link to Parts Repository</th>
+                    </tr>
+                    <tr>
+                      <td>CymA</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849026">http://parts.igem.org/Part:BBa_K4849026</a></td>
+                    </tr>
+                  </table>
+                  
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <br>
+                <h2>Assembly of Mtr genes and Operons into Cyanogate Vectors:</h2>
+                <p>Assembly into Level 0 vectors was sucessful for all 4 genes (MtrCAB subunits and CymA) and 3 operons after multiple attempts with troubleshooting involved. All reactions were done in silico to infer the size of the fragments. Initially colony PCR allowed identification of colonies with correct inserts which were then confirmed by diagnositc digestions shown in figure 3, 4, 5. While digestion with BsaI cuts out the gene from the vector via two cuts, digestion with PvuI leads to linerisation allowing checking of the construct’s size. It is important to note that MtrC gene had an extra BsaI site which was the restriction sites used in Lv0 -> Lv1 cyanogate assembly. Likewise, the 242bp faint bands visible for MtrCAB, MtrCA and MtrC, demonstrate the presence of an extra BsaI site and thus the requirement for domestication (figure 5 and 6). Also, while the single cut bands for MtrCAB, MtrCA and MtrAB look bigger than their expected size, the gel was run longer and the sizes were confirmed. </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr3.png" style="width: 100%;">
+                <p><small><strong>Figure 3</strong>: Diagnostic digestion on MtrA and MtrB. 1 Kb DNA ladder diagram (New England Biolabs). The ladder is not to scale and it is provided for reference purposes only.</small></p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr4.png" style="width: 100%;">
+                <p><small><strong>Figure 4</strong>: Diagnostic digestion on MtrC and CymA. 1 Kb DNA ladder diagram (New England Biolabs). The ladder is not to scale and it is provided for reference purposes only.</small></p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 text-center">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr5-1.jpg" style="width: 15%;"><img src="https://static.igem.wiki/teams/4849/wiki/mtr5-2.png" style="width: 70%;">
+                <p><small><strong>Figure 5</strong>: Diagnostic digestion on MtrCAB, MtrAB and MtrCA. 1 Kb DNA ladder diagram (New England Biolabs). The ladder is not to scale, and it is provided for reference purposes only.</small></p>  
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr6.png" style="width: 100%;">
+                <p><small><strong>Figure 6</strong>: Diagnostic digestion on MtrC, showing 242bp band suggesting requirement for domestication. </small></p>  
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <p>Assembly into Level 1 vectors was sucessful for MtrA, MtrB, MtrAB, and CymA only. We were unable to take MtrCAB, MtrCA and MtrC into Level 1 vectors due to numerous failed attemps it took to domesticate the extra BsaI site in MtrC gene, thereby consuming vauable time. Similar to level 0 assemblies, colony PCR allowed identification of colonies with correct inserts (Figure 7 and 8) which were then confirmed by diagnositc digestions. Nenvertheless, we have added all the different level 1 composite parts onto the IGEM registry. Importantly, we used the PtrC10 protomor (BBa_K4849013) from the Cyanogate toolkit as it gave us the option to express the Mtr compex in both Synechocystis sp. PCC 6803 and E. coli. </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr7.png" style="width: 100%;">
+                <p><small><strong>Figure 7</strong>: Positive colony PCR results showing Level 1 MtrA and Lv1 CymA. MtrA size with the promotor, and terminator is approximately 1500 bp. Colonies 4 and 5 were successful. CymA size with the promotor, and terminator is approximately 800 bp. Colonies 1 and 3 were successful.</small></p> 
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr8.png" style="width: 100%;">
+                <p><small><strong>Figure 8</strong>: Positive colony PCR results showing Level 1 MtrB. MtrB size size with the promotor, and terminator is approximately 2100 bp. Colony 1 and 2 were successful.</small></p> 
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <p>
+                    Finally, as level 1 vectors could be used in E. coli and our teams decision to scrap any more attemps to chrecterise Mtr in Synechocystis sp. PCC 6803 (due to failed attemps with Biosafety and time taken to transform Synechocystis sp. PCC 6803), only MtrAB was taken into Level T cyanogate vector (figure 9). The sucessful assembly was confirmed via diagnostic digestions. 
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr9.png" style="width: 100%;">
+                <p><small><strong>Figure 9</strong>: Positive colony PCR results showing Level T Mtr AB. MtrAB size with the promotor, terminator and the end linker approximately 3300 bp. Colonies 5, and 6 were successful.</small></p> 
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <p>
+                    <strong>Important Note</strong>: All the assemblies were checked via whole plasmid sequening (againt reference) conducted by the Edinburgh Genome Foundry. The genome sequening report can be found at the bottom of the page. 
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <table>
+                    <tr>
+                      <th>MTR Chassis (LvT)</th>
+                      <th>Link to Parts Repository</th>
+                    </tr>
+                    <tr>
+                      <td>Ptrc10 - MtrA - TrrnB - End-linker 1</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849031">http://parts.igem.org/Part:BBa_K4849031</a></td>
+                    </tr>
+                    <tr>
+                      <td>Ptrc10 - MtrB - TrrnB - End-linker 1</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849033">http://parts.igem.org/Part:BBa_K4849033</a></td>
+                    </tr>
+                    <tr>
+                      <td>Ptrc10 - MtrC - TrrnB - End-linker 1</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849034">http://parts.igem.org/Part:BBa_K4849034</a></td>
+                    </tr>
+                    <tr>
+                      <td>Ptrc10 - MtrCAB - TrrnB - End-linker 1</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849035">http://parts.igem.org/Part:BBa_K4849035</a></td>
+                    </tr>
+                    <tr>
+                      <td>Ptrc10 - MtrCA - TrrnB - End-linker 1</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849036">http://parts.igem.org/Part:BBa_K4849036</a></td>
+                    </tr>
+                    <tr>
+                      <td>Ptrc10 - MtrAB - TrrnB - End-linker 1</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849037">http://parts.igem.org/Part:BBa_K4849037</a></td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>Cym Gene</th>
+                      <th>Link to Parts Repository</th>
+                    </tr>
+                    <tr>
+                      <td>Ptrc10 - CymA - TrrnB - End-linker 1</td>
+                      <td><a href="http://parts.igem.org/Part:BBa_K4849038">http://parts.igem.org/Part:BBa_K4849038</a></td>
+                    </tr>
+                  </table>
+                  
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <br>
+                <b><a href="http://parts.igem.org/Part:BBa_K4849039">Sepcial LvT Synechocystis MTR constructs:</a></b>
+                <ul>
+                    <li>i) pSEVA421 acceptor - Ptrc10 - MtrCAB - TrrnB - Ptrc10 - CymA - TrrnB - End-linker 2
+                </ul>
+                <br>
+                <b>Other LvT Synechocystis MTR constructs:</b>
+                <ul>
+                    <li>i) pSEVA421 acceptor - Ptrc10 - MtrA - TrrnB - Ptrc10 - CymA - TrrnB - End-linker 2</li>
+                    <li>ii) pSEVA421 acceptor - Ptrc10 - MtrB - TrrnB - Ptrc10 - CymA - TrrnB - End-linker 2</li>
+                    <li>iii) pSEVA421 acceptor - Ptrc10 - MtrC - TrrnB - Ptrc10 - CymA - TrrnB - End-linker 2</li>
+                    <li>iv) pSEVA421 acceptor - Ptrc10 - MtrCA - TrrnB - Ptrc10 - CymA - TrrnB - End-linker 2</li>
+                    <li>v) pSEVA421 acceptor - Ptrc10 - MtrAB - TrrnB - Ptrc10 - CymA - TrrnB - End-linker 2</li>
+                </ul>
+                
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <br>
+                <b>Domestication: MtrCAB, MtrCA and MtrC</b>
+                <p>
+                    Domestication involves using primers to make precise modifications to a DNA sequence, in this case, changing a single base pair so the DNA sequence does not have a recognition site for a restriction enzyme. Domestication was done by PCR followed by restriction digestion and ligation. Primers were designed allowing elimination of the restriction site by changing a single base pair. The domestication PCR for MtrCAB and MtrCA can be seen in the gel below (figure 10). The domestication PCR also introduced new cut sites on the linear DNA allowing digestion and then re-ligation into a plasmid. 
+                </p>
+                <p>
+                    Due to the band smears, gel extraction was chosen over PCR cleanup. Once the linear domesticated DNA was cleaned, it was digested and re-ligated in a thermocycler. However, diagnostic digestion gels of the domesticated plasmid showed that the domestication did not work. Moreover, the digestion and re-ligation step was performed in a water bath, but the domestication did not work checked via digestions. However, after several attempts, the domestication for MtrCAB and MtrCA was successful but due to time constraints and previous difficulty in taking our genes from Lv0 to Lv1 parts, we decided to drop MtrCAB, MtrCA and MtrC. 
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr10.png" style="width: 100%;">
+                <p><small><strong>Figure 10</strong>: Domestication PCR conducted at different temperatures (trouble-shooting). </small></p> 
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <br>
+                <table>
+                    <tr>
+                      <th>Primer Name</th>
+                      <th>Sequence</th>
+                    </tr>
+                    <tr>
+                      <td>MtrA Forward Primer</td>
+                      <td>CAGTGAAGACataATGAAGAACTGCCTAAAAATG</td>
+                    </tr>
+                    <tr>
+                      <td>MtrA Reverse Primer</td>
+                      <td>CAGTgaagacATaagcTTAGCGCTGTAATAGCTTG</td>
+                    </tr>
+                    <tr>
+                      <td>MtrB Forward Primer</td>
+                      <td>CAGTGAAGACAtAATGAAATTTAAACTCAATTTGATCAC</td>
+                    </tr>
+                    <tr>
+                      <td>MtrB Reverse Primer</td>
+                      <td>CAGTgaagacATaagcTTAGAGTTTGTAACTCATGCTC</td>
+                    </tr>
+                    <tr>
+                      <td>MtrC Forward Primer</td>
+                      <td>CAGTgaagacATaATGATGAACGCACAAAAATC</td>
+                    </tr>
+                    <tr>
+                      <td>MtrC Reverse Primer</td>
+                      <td>CAGTgaagacATaagcTTACATTTTCACTTTAGTGTGATC</td>
+                    </tr>
+                    <tr>
+                      <td>MtrC Domestication Forward Primer</td>
+                      <td>CAGTgaagacATtggacTCGCAAATTTAGAAAT</td>
+                    </tr>
+                    <tr>
+                      <td>MtrC Domestication Reverse Primer</td>
+                      <td>CAGTgaagaCAGTCCAATCACTGGCATGTC</td>
+                    </tr>
+                    <tr>
+                      <td>CymA Forward Primer</td>
+                      <td>CAGTgaagacATaATGAACTGGCGTGCACTA</td>
+                    </tr>
+                    <tr>
+                      <td>CymA Reverse Primer</td>
+                      <td>CAGTgaagacATaagcTTATCCTTTTGGATAGGGGTG</td>
+                    </tr>
+                    <tr>
+                      <td>CyanoGate Level 0 Primers - Forward</td>
+                      <td>GTCTCATGAGCGGATACATATTTGAATG</td>
+                    </tr>
+                    <tr>
+                      <td>CyanoGate Level 0 Primers - Reverse</td>
+                      <td>TTGAGTGAGCTGATACCGCT</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <br>
+                <b>Ferricyanide assay: (Mtr Characterisation in <i>Synechocystis</i>)</b>
+                <p>
+                    The potassium ferricyanide assay provides a biochemical alternative to electrical measurements, enabling the recording of the rate at which electrons are produced and secreted extracellularly by the metabolically active Synechocystis sp. PCC 6803.
+                </p>
+                <p>
+                    Once dissolved in a solution, potassium ferricyanide dissociates, leaving the ferricyanide ion. This ion is freely present in the culture media but cannot enter the cells. This property makes ferricyanide suitable for the assay.
+                </p>
+                <p>
+                    In this assay, potassium ferricyanide in a water solution (displaying a yellow hue) is reduced by a single electron to produce transparent potassium ferrocyanide. This change in color reduces the recorded absorbance at 420 nm. By plotting a linear regression line over time, the rate of electron escape from the cyanobacterial cells can be estimated. (AC Gonzalez-Aravena et al, 2018, DOI: 10.1039/c8ra00951a)
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-center">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtrf.png" style="width: 100%;">
+                <p><small><strong>Formula 1</strong>: reduction reaction of ferricyanide ion to ferrocyanide </small></p> 
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <p>
+                    To become familiar with the technique, we attempted the assay in the wildtype Synechocystis sp. PCC 6803 (figure 11). However, due to time constraints, we were unable to repeat the experiment in both the wild-type and bio-engineered strains to characterize the successful functionality of the different MTR composite systems, most importantly, MtrCAB, MtrCAB-CymA, CymA.
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <p><strong>Table 1</strong>: Absorbance of ferricyanide at 420nm over time in minutes</p>
+                <table>
+                    <tr>
+                      <th>Time (minutes)</th>
+                      <th>Absorbance (420nm)</th>
+                    </tr>
+                    <tr>
+                      <td>35</td>
+                      <td>-0.003</td>
+                    </tr>
+                    <tr>
+                      <td>85</td>
+                      <td>-0.0235</td>
+                    </tr>
+                    <tr>
+                      <td>140</td>
+                      <td>-0.033</td>
+                    </tr>
+                    <tr>
+                      <td>200</td>
+                      <td>-0.04</td>
+                    </tr>
+                    <tr>
+                      <td>260</td>
+                      <td>-0.0555</td>
+                    </tr>
+                    <tr>
+                      <td>320</td>
+                      <td>-0.0685</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr11.png" style="width: 100%;">
+                <small><strong>Figure 11</strong>: Linear regression plot of 1mM ferricyanide reduction by Synechocystis sp. PCC 6803 , measured as absorbance (420nm) over time(minutes). Data shown is the mean of experiment done in technical triplicates, OD(630nm) of Synechocystis sp. PCC 6803  cell culture was 1.44, blanking done at time =0.</small>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <b>Co-Tranformation of Ccm and Mtr: (Mtr Characterisation in E. coli:)</b>
+                <p>
+                    Attempting to charactize the mtrAB cassette in E. coli, we needed to introduce the cytochrome c maturation gene cascade (ccmA-H) which is lacking in E. coli (but present in Cyanobacteria) to the organism, as heme folding is crucial for the individual mtr subunits appropiate assembly and therefore transport to the membrane/periplasmic regions.
+                </p>
+                <p>
+                    Using ccmA-H cassette in pSB1C3 vector (obtained from iGEM Edinburgh 2012, BBa_K917006), we have underwent co-transformation of the ccmA-H genes with mtrA,B,AB in lvl 1, this was possible as each plasmid had conferred different antibiotic resistance selection (chloramphenicol for ccm, ampicillin for level 1 mtr).
+                </p>
+                <p>
+                    We have then miniprepped the samples and did diagnostic digestions using NotI restriction enzyme which linearises the cyanogate vector, and EcoRI which linearizes the ccm vector. While we strongly believe that the co-transformations were succesful as multiple colonies had grown on the LB plates with both antibiotics added, the quality of the digestions was rather poor (figure 13). A potential reason for the survival of colonies on ampicillin colonies although lack of ccmA-H shown in digestion could be due to presence of the vector without the gene.  
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-center">
+                <img src="https://static.igem.wiki/teams/4849/wiki/mtr12.png" style="width: 100%;">
+                <p><small><strong>Figure 12</strong>: Diagnostic digestion on MtrA, MtrB and MtrAB co-transformed with Ccm. </small></p> 
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <b>
+                    Membrane Fractionation and Heme Staining (Future Experiments – in both Synechocystis and E. coli):
+                </b>
+                <p>
+                    Continuing the characterization efforts, membrane fractionation of the co-transformant E. coli would have been carried out to yield the cytoplasmic, membrane, and periplasmic fractions, each enriched with proteins typically localized there.
+                </p>
+                <p>
+                    Running the fractionated samples on an SDS-PAGE would enable the separation of protein bands based on their size. We could then confirm the presence of mtrA and mtrB in the periplasmic and membrane fractions by staining the resulting gel with a heme-staining solution, which selectively stains proteins containing a heme group. 
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
     <!-- 
         
         SECTION 3: HIS-LYS
@@ -188,7 +692,95 @@
         <div class="col-lg-1"></div>
     </div>
     <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Finding the optimal ligation efficiency for hisG and dapA using CyanoGate</h2>
+            <p>
+                The most optimal insert:vector ratio has been described in this work, concluding that a higher ratio may be more suitable for the E. coli MG1655 genes hisG, dapA and lysC when applying the CyanoGate system for transformation - with a 10:1 insert:vector ratio showing highest success potential of bands appearing through colony PCR following a white-blue screening using Golden Gate assembly, although a 2:1 insert:vector ratio showed higher colony counts. Being native E. coli genes, this finding may be more relevant for further cloning experiments using genes from E. coli. Additionally, an increased number of cycles through thermal cycling following assembly could be more appropriate for these genes - suggesting an adjustment to the recommended 5 cycles by Vasudevan et al. (2019). This project may therefore demonstrate useful troubleshooting guidance for further cloning experiments using the newly developed CyanoGate system, or for cloning experiments specifically involving the genes hisG, dapA and lysC. 
+            </p>
+            
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+            <img src="https://static.igem.wiki/teams/4849/wiki/hl-t4.png" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4849/wiki/hl-t5.png" style="width: 100%;">
+        </div>
+        <div class="col-lg-5">
+            <img src="https://static.igem.wiki/teams/4849/wiki/hl-f17.png" style="width: 100%;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="https://static.igem.wiki/teams/4849/wiki/hl-f18.png" style="width: 100%;">
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h2>Considerations for replicating the experiments</h2>
+            <p>
+                The proposed increase of the insert:vector ratio for level 0 and level 1 transformations should be considered when replicating the experiments using native E. coli MG1655 genes hisG and dapA following the modular platform CyanoGate. The presented modifications relating to thermal cycling should also be considered for further repeats of this experiment. 
+            </p>
+            <h2>Ninhydrin Test For Amino Acids</h2>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <img src="https://static.igem.wiki/teams/4849/wiki/hl-f2.png" style="width: 100%;">
+                <p><small>
+                    Ninhydrin test on dapA and hisG overexpressed strains. Shows 2% amino acid standard solution (2% AA), Wild type (WT), dapA level 1 overexpressed strain (dapA) and hisG overexpressed strain (hisG) both under Ptrc10 promotor. dapA shows a 1.48x increase compared to WT and hisG is 1.57x. Error bars are standard deviations.  p=4.73E-5.
+                </small></p>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
 
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-8">
+            <p>
+                Ninhydrin test to quantitatively determine relative levels of amino acids between level 1 transformed strains and wild type (WT Control) E.coli (TOP10). A 2% amino acid standard was prepared to provide further comparison. The ninhydrin reaction involves ninhydrin (C9H604) reacting to amines or a-amino acids. The development of a deep blue colour indicates the presence of amino acids in the sample. This can be quantified with a spectrophotometer reading absorbance at 570nm, and provided the initial OD of the cell cultures for comparison is known, quantitative results can be drawn. 
+            </p>
+            <p>
+                Our results, obtained using the ninhydrin protocol in the protocol section on an overnight culture of E.coli cells in stationary phase, suggest that the transformants are successful in overexpressing hisG and dapA and that this does correspond to increased amino acid expression. Compared to the wild type there were significant differences in the absorbance of the analytes from dapA and hisG. Stationary phase was used as this would mimic the cell culture makeup of the panel waste. After use the culture would have grown stagnant and so based on our growth curves, an overnight culture was sufficient to plateau the growth rate into a stationary phase.
+            </p>
+            <p>
+                Further work is needed to verify the amino acid increase is due to lysine and histidine respectively through mass spectrometry. We have sent samples off for M/Z analysis however due to the long queue times it's unlikely that results will be in before the wiki freeze. If they arrive in time for the presentation then they will be included in that. 
+            </p>
+            
+        </div>
+        <div class="col-lg-2"><img src="https://static.igem.wiki/teams/4849/wiki/hl-f3.png" style="width: 75%;"></div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/hl-f4alt.png" style="width: 100%;">
+        </div>
+        <div class="col-lg-4 center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/hl-f5.png" style="width: 100%;">
+            <p><small>
+                BYJU'S (2022). Ninhydrin Test - Reaction, Principle, Procedure, Result Interpretation. [online] BYJUS. Available at: https://byjus.com/chemistry/ninhydrin-test/.
+            </small></p>
+        </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+
+        </div>
+        <div class="col-lg-1"></div>
     </div>
     <!-- 
         
@@ -319,8 +911,7 @@
             </p>
             <br>
             </div>
-        </div>
-        <div class="col-lg-1"></div>
+            <div class="col-lg-1"></div>
     </div>
     <div class="row">
         <div class="col-lg-1"></div>
@@ -488,7 +1079,161 @@
         <div class="col-lg-1"></div>
     </div>
     <div class="row">
-
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h3>Salt growth curve of BL21 (DE3) cells</h3>
+            <p>
+                To determine the level of growth and salt tolerance in Escherichia coli BL21 (DE3), a growth curve was made, incubating the E. coli in various concentrations of NaCl in LB media. 29ml LB media was inoculated with 1ml overnight culture of E.coli and the initial OD600 was measured. This was then followed by measurements taking 1ml of media every hour for 6 hours. 1% salt has been removed as the initial OD600 was significantly higher than those of the others, which may have affected the results.  The results showed a significant decrease in growth after 6 hours of the E.coli BL21 after 3% NaCl (w/v) LB (Figure 1).  The doubling time of the E.coli can be seen to steadily increase until 3.5% where the doubling time begins to increase significantly as the concentration of salt in the medium rises (Table 1). The E.coli grown in 0.5% salt (no additional salt), grew at the fastest rate for the first 5 hours with a doubling time of 1.05 hours in comparison to 1.5% salt with a doubling time of 1.09 hours. However, more testing would be necessary to determine if this difference is due to increased salt in the medium. The E. coli grew at 0.5% then saw a decline between hours 5 and 6, which was not mirrored in other cultures at different concentrations. However, a decline before recovery had been seen in other cultures, such as 3.5% in hour 5. 
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 text-center">
+            <img src="https://static.igem.wiki/teams/4849/wiki/sal-fig1.png" style="width: 100%;">
+            <p><small>
+                <strong>Figure 1</strong>: 6 hour Growth Curve of BL21 (DE3) Cells In LB Media of Varying Salt Concentrations. 1% Salt LB was removed due to a likely error in protocol affecting results. LB media containing various salt concentrations were inoculated with BL21 (DE3) Overnight culture and the OD600 was measured every hour to measure the growth of the Escherichia coli.
+            </small></p>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p>Table 1 - Doubling Times of Salty E.coli Cultures at 6 hours. Doubling times were calculated using the formula     Dt = hours/ log2( final OD600/ Initial OD600)</p>
+            <table>
+                <tr>
+                  <th>Lysogeny Broth Salt Concentration (%)</th>
+                  <th>Doubling Time at 6 Hours (Hours)</th>
+                </tr>
+                <tr>
+                  <td>0.5</td>
+                  <td>1.29</td>
+                </tr>
+                <tr>
+                  <td>1.0</td>
+                  <td>1.38</td>
+                </tr>
+                <tr>
+                  <td>1.5</td>
+                  <td>1.23</td>
+                </tr>
+                <tr>
+                  <td>2.0</td>
+                  <td>1.26</td>
+                </tr>
+                <tr>
+                  <td>2.5</td>
+                  <td>1.32</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1.40</td>
+                </tr>
+                <tr>
+                  <td>3.5</td>
+                  <td>1.65</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2.05</td>
+                </tr>
+                <tr>
+                  <td>4.5</td>
+                  <td>2.35</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>3.85</td>
+                </tr>
+                <tr>
+                  <td>5.5</td>
+                  <td>2.27</td>
+                </tr>
+              </table>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <br>
+            <h3>stpA level T</h3>
+            <p>
+                Due to being unsuccessful in extracting purified stpA gene from genomic DNA, a gene block was designed to be inserted into a cyanogate level T vector with correct cut sites and overhangs for an assembly reaction wherein the restriction enzyme BbsI would cut the gene block revealing sticky ends which could then be ligated into the level T vector. A level T reaction was conducted and the reaction product was transformed into TOP10 cells which were then spread onto XGAL-IPTG plates for blue/white selection. White colonies were then picked and colony PCR was conducted to confirm successful transformation. The PCR product was then run on 1% agarose gel and the gel was analysed using a UV imager (Figure 2). The results showed bands of the expected size across the white colonies indicating that the plasmid had been successfully constructed and transformed.
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <img src="https://static.igem.wiki/teams/4849/wiki/sal-fig2.png" style="width: 100%;">
+            <p><small>
+                <strong>Figure 2</strong>: Imaged Agarose gel electrophoresis. Colony PCR was performed generating bands at the expected positions between 1.5 and 2kb.
+            </small></p>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p>
+                The ggpS gene was extracted from synechocystis sp. PCC 6803 by PCR from genomic DNA. The gene was then purified by gel extraction and ligated in an assembly reaction into the CyanoGate level 0 backbone. A further digestion and ligation was performed to assemble the gene along with the constitutive promoter ptrc10, which functions in both synechocystis as well as E.coli and the terminator pC0.082. This level 1 assembly was then transformed into E. coli TOP10 cells and confirmed by colony PCR and digestion. However, the final plasmid was found to be around 1kb larger than anticipated (Figure 3). Nevertheless, the correct band sizes indicating that ggpS has been successfully ligated into the level 1 vector and transformed were present. The decision was then made to proceed with error-prone PCR using ggpS in this backbone.
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <img src="https://static.igem.wiki/teams/4849/wiki/sal-fig3.png" style="width: 100%;">
+            <p><small>
+                <strong>Figure 3</strong>: Agarose Gel Electrophoresis image of undigested Level 1 construct and digested with NotI and BbsI. Plasmid miniprep was digested with NotI and bbsI and run on 1% agarose gel in gel electrophoresis and imaged. Repeats can be found on the right.
+            </small></p>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+            <p>
+                However, after repeated attempts, this error-prone PCR was unsuccessful as when run with dye on 1% Agarose gel and imaged, the bands indicated two PCR products, one at 4.5kb and one at 2.5kb consistently. In silico there was considered no reason to believe that primer mis-annealing should take place and so it was hypothesised that either the plCH47732 level 1 acceptor vector, the PTRC10 promoter, or pC0.082 terminator in level 0 was incorrect. A PCR reaction was performed using the level 0, level 1, and genomic PCR extract as template DNA and all templates except the level 1 were successful (Figure 4).
+            </p>
+            <p>
+                To circumvent the plCH47732 backbone, epPCR of ggpS was performed again using the level 0 assembly as a template and NEB Taq polymerase. The genomic Forward and Genomic Reverse primers were used. These primers when digested, would generate the overhangs necessary to assemble into a  pJUMP29-1A acceptor vector with a constitutive PJ23100 promoter, pET ribosome binding site, and L3SAP51 terminator. The resulting library was digested with BbsI, creating 1.5kb double-stranded linear DNA fragments. These digested fragments were then used in a level 1 JUMP assembly reaction to generate level 1 constructs with a GFP selection marker. Fluorescent colonies were picked for colony PCR to check for successful assembly and transformation. However, the first attempt was unsuccessful. 
+                <br><br>
+                After a subsequent attempt utilising longer extension times, the colony PCR indicated successful assembly and transformation of the epPCR library (Figure 5). The bands were at approximately 1.8kb as expected in colonies 1, 2, and 4. These results were not demonstrated in our final report. The error-prone PCR library was then transferred to the Edinburgh Genome Foundry, along with chemically competent cells for heat shock containing the stpA level T plasmid for transformation and subsequent performance of the assay.                
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="https://static.igem.wiki/teams/4849/wiki/sal-fig4.png" style="width: 100%;">
+            <p><small>
+                <strong>Figure 4</strong>: Agarose gel electrophoresis image: Q5 PCR of ggpS from ggpS, lvl0 and lvl1P1 templates, and Q5 of pICH47732 backbone from lvl1 template.
+            </small></p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <p>
+                Sanger sequencing of the digested ggpS epPCR library showed that the consensus sequence from the sequencing matched the expected sequence from in-silico testing.
+            </p>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <img src="https://static.igem.wiki/teams/4849/wiki/sal-fig5.png" style="width: 100%;">
+            <p><small>
+                <strong>Figure 5</strong>: UV Imaged Agarose Gel electrophoresis. 4 Colonies were picked for colony PCR using P1 and P2 primers. Results show colony 1,2 and 4 with the expected band size.
+            </small></p>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
     </div>
     <!-- 
         
@@ -508,6 +1253,32 @@
         </div>
         <div class="col-lg-2"></div>
 
+    </div>
+    <div class="row">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <h2>Salinity Report</h2>
+                <hr>
+                <div class="pdf-container">
+                  <iframe src="https://static.igem.wiki/teams/4849/wiki/idec-report-final.pdf" class="w-100 h-100" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">        
+                <h2>Sequencing Report</h2>
+                <hr>
+                <div class="pdf-container">
+                  <iframe src="https://static.igem.wiki/teams/4849/wiki/sequencing-report.pdf" class="w-100 h-100" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
