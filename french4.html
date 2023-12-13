@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Link on Typing</title>
+</head>
+<body>
+
+<!-- Text box with white text, background, and borders (visually hidden) -->
+<input type="text" id="visibleInput" style="color: white; background-color: white; border: 1px solid white;outline: none;">
+
+<script>
+    function handleKeyPress(event) {
+    if (event.keyCode === 13) {
+        var inputValue = document.getElementById('visibleInput').value.toLowerCase();
+        if (inputValue === "chrisfrench") {
+            window.open('https://2010.igem.org/Team:Edinburgh/Facts', '_blank');
+            document.getElementById('visibleInput').value = "";
+        }}}
+    document.getElementById('visibleInput').addEventListener('keyup', handleKeyPress);
+
+</script>
+
+</body>
+</html>

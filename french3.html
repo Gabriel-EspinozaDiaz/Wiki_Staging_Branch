@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Link on Typing</title>
+</head>
+<body>
+
+<!-- Text box with white text and background (visually hidden) -->
+<input type="text" id="visibleInput" style="color: white; background-color: white; border: 1px solid white;">
+
+<script>
+    // Function to handle key presses
+    function handleKeyPress(event) {
+        // Check if the pressed key is 'Enter' (key code 13)
+        if (event.keyCode === 13) {
+            // Get the value of the visible input field
+            var inputValue = document.getElementById('visibleInput').value.toLowerCase();
+
+            // Check if the input value is "chrisfrench"
+            if (inputValue === "chrisfrench") {
+                // Open the link
+                window.open('https://2010.igem.org/Team:Edinburgh/Facts', '_blank');
+                // Clear the input field
+                document.getElementById('visibleInput').value = "";
+            }
+        }
+    }
+
+    // Attach the event listener to the visible input field for key presses
+    document.getElementById('visibleInput').addEventListener('keyup', handleKeyPress);
+
+    // Automatically focus the visible input field and capture keyboard input
+    document.addEventListener('DOMContentLoaded', function() {
+        var visibleInput = document.getElementById('visibleInput');
+        visibleInput.focus();
+    });
+</script>
+
+</body>
+</html>
